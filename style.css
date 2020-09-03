@@ -49,9 +49,9 @@ font-size: 5.5rem !important;
 }
 
 @media (min-width: 1440px) {
-.home-instagram-image {
-    max-width: 15%;
-    min-width: 280px;
+.heroes__image {
+    max-width: 15% !important;
+    min-width: 280px !important;
 filter: grayscale(100%);
 }}
 
