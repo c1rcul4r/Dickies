@@ -44,6 +44,10 @@ font-size: 5.5rem !important;
   position: relative;
 }
 
+.home-instagram {
+  position: relative;
+}
+
 @media (min-width: 1440px) {
 .home-instagram-image {
     max-width: 15%;
