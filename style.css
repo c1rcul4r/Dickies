@@ -91,9 +91,118 @@ h2 {
 }
 
 .column1-2__left {
-  margin: 25px -25px 0 25px;
+  margin: 0 0 0px 25px !important;
+  padding: 25px !important;
+  order: 2;
 }
 
 .column1-2__right {
-  margin: 0 25px 25px -25px;
+  margin: 25px 25px -25px 0 !important;
+  z-index: 2
+}
+
+.column3-4_left--image {
+  padding: 0 24px !important;
+  margin: 0 !important;
+  z-index: 5;
+}
+
+.column3-4_right--text {
+  padding: 50px 50px 50px 50px !important;
+  margin: -25px 0 0 !important;
+}
+
+.column3-4_left--text {
+  padding: 50px 50px 50px 50px !important;
+  margin: -25px 0 0 !important;
+  order: 2;
+}
+
+.column3-4_right--image {
+  padding: 0 24px !important;
+  margin: 0 !important;
+  z-index: 5;
+}
+
+.column__right--text, .column__left--text {
+  padding: 25px !important;
+}
+
+.desktop {
+  display: none !important;
+}
+
+.newsletter {
+  padding: 0 20px !important;
+}
+
+.newsletter__cta {
+  font-size: 24px !important;
+  line-height: 26px !important;
+  color: white !important;
+  font-weight: 300 !important;
+}
+
+.newsletter__form {
+  font-size: 24px !important;
+  color: white !important;
+  font-weight: 300 !important;
+}
+
+@media (min-width: 768px) {
+  .newsletter {
+    padding: 0 120px !important;
+  }
+
+  .newsletter__cta {
+    font-size: 32px !important;
+    line-height: 36px !important;
+    color: white !important;
+  }
+
+  .newsletter__form {
+    font-size: 26px !important;
+    color: white !important;
+  }
+
+  .desktop {
+    display: block !important;
+  }
+
+  .column1-2__left {
+    margin: 0 -25px 0px 25px !important;
+    padding: 25px !important;
+    order: 0;
+  }
+
+  .column1-2__right {
+    margin: -25px 25px 25px 0 !important;
+  }
+
+  .column3-4_left--image {
+    padding: 0 !important;
+    margin: 0 -25px 0 25px !important;
+    z-index: 5;
+  }
+
+  .column3-4_right--text {
+    padding: 50px 50px 50px 50px !important;
+    margin: -25px 0 0 !important;
+  }
+
+  .column3-4_left--text {
+    padding: 50px 50px 50px 50px !important;
+    margin: 0 !important;
+    order: 0;
+  }
+
+  .column3-4_right--image {
+    padding: 0 !important;
+    margin: 0 25px 0 -25px !important;
+    z-index: 5;
+  }
+
+  .column__right--text, .column__left--text {
+    padding: 25px !important;
+  }
 }
