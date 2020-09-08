@@ -53,8 +53,9 @@ h2 {
 
 @media (min-width: 1440px) {
   .heroes__image {
-    max-width: 15% !important;
-    min-width: 280px !important;
+    max-width: unset !important;
+    min-width: unset !important;
+    flex: 1 0 20%;
     filter: grayscale(100%);
   }
 }
@@ -204,5 +205,11 @@ h2 {
 
   .column__right--text, .column__left--text {
     padding: 25px !important;
+  }
+
+  .heroes__container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100% !important;
   }
 }
