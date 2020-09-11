@@ -143,6 +143,10 @@ h2 {
   display: none !important;
 }
 
+.mobile {
+  display: block !important;
+}
+
 .newsletter {
   padding: 0 20px !important;
 }
@@ -203,6 +207,10 @@ h2 {
 
   .desktop {
     display: block !important;
+  }
+
+  .mobile {
+    display: none !important;
   }
 
   .column1-2__left {
