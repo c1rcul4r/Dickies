@@ -190,6 +190,11 @@ h2 {
     text-align: center;
 }
 
+.blog__link a {
+  text-decoration: none !important;
+  color: #213a65 !important;
+}
+
 @media (min-width: 768px) {
   .newsletter {
     padding: 0 120px !important;
