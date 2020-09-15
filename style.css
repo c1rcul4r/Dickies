@@ -121,7 +121,7 @@ h2 {
 }
 
 .column1-2__left {
-  padding: 50px 50px 50px 50px !important;
+  padding: 50px 25px !important;
   margin: -25px 0 0 !important;
   order: 2;
 }
@@ -139,7 +139,7 @@ h2 {
 }
 
 .column3-4_right--text {
-  padding: 50px 50px 50px 50px !important;
+  padding: 25px !important;
   margin: -25px 0 0 !important;
 }
 
