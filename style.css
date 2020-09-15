@@ -197,6 +197,11 @@ h2 {
   color: #ee0909 !important;
 }
 
+.newsletter__title {
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
 @media (min-width: 768px) {
 
   .desktop {
