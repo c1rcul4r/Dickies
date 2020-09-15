@@ -173,14 +173,14 @@ h2 {
   right: 5px;
   top: 5px;
   border: none !important;
-  padding: 0 !important;
+  padding: 10px !important;
 }
 
 .heroes__remove::before {
   -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 25px;
+    line-height: 25px;
     color: #ffffff;
     content: '\e616';
     font-family: 'luma-icons';
@@ -207,6 +207,31 @@ h2 {
 }
 
 @media (min-width: 768px) {
+
+  .heroes__remove {
+    background: transparent !important;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .heroes__remove::before {
+    -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 14px;
+      line-height: 14px;
+      color: #ffffff;
+      content: '\e616';
+      font-family: 'luma-icons';
+      vertical-align: middle;
+      display: inline-block;
+      font-weight: 400;
+      overflow: hidden;
+      speak: none;
+      text-align: center;
+  }
 
   .desktop {
     display: block !important;
