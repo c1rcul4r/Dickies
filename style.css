@@ -197,7 +197,10 @@ h2 {
   color: #003865 !important;
 }
 
-.newsletter__title {
+.newsletter__title strong{
+  font-size: 4.5rem !important;
+  letter-spacing: -0.56px !important;
+  line-height: 48px !important;
   font-weight: 400 !important;
   font-style: normal !important;
 }
@@ -206,7 +209,15 @@ h2 {
   text-decoration: none !important;
 }
 
+.newsletter__container {
+  padding: 10px 120px !important;
+}
+
 @media (min-width: 768px) {
+  .newsletter__container {
+    padding: 25px !important;
+  }
+
 
   .heroes__remove {
     background: transparent !important;
