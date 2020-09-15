@@ -202,6 +202,10 @@ h2 {
   font-style: normal !important;
 }
 
+.instagram__link a {
+  text-decoration: none !important;
+}
+
 @media (min-width: 768px) {
 
   .desktop {
