@@ -198,9 +198,9 @@ h2 {
 }
 
 .newsletter__title strong{
-  font-size: 4.5rem !important;
-  letter-spacing: -0.56px !important;
-  line-height: 48px !important;
+  font-size: 30px;
+  letter-spacing: -1.78px;
+  line-height: 35px;
   font-weight: 400 !important;
   font-style: normal !important;
 }
@@ -214,6 +214,14 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .newsletter__title strong{
+    font-size: 4.5rem !important;
+    letter-spacing: -0.56px !important;
+    line-height: 48px !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+  }
+
   .newsletter__container {
     padding: 25px !important;
   }
