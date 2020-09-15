@@ -167,23 +167,6 @@ h2 {
   display: block !important;
 }
 
-.newsletter {
-  padding: 0 20px !important;
-}
-
-.newsletter__cta {
-  font-size: 24px !important;
-  line-height: 26px !important;
-  color: white !important;
-  font-weight: 300 !important;
-}
-
-.newsletter__form {
-  font-size: 24px !important;
-  color: white !important;
-  font-weight: 300 !important;
-}
-
 .heroes__remove {
   background: transparent !important;
   position: absolute;
@@ -210,25 +193,11 @@ h2 {
 }
 
 .blog__link a {
-  text-decoration: none !important;
-  color: #213a65 !important;
+  text-decoration: underline !important;
+  color: #ee0909 !important;
 }
 
 @media (min-width: 768px) {
-  .newsletter {
-    padding: 0 120px !important;
-  }
-
-  .newsletter__cta {
-    font-size: 32px !important;
-    line-height: 36px !important;
-    color: white !important;
-  }
-
-  .newsletter__form {
-    font-size: 26px !important;
-    color: white !important;
-  }
 
   .desktop {
     display: block !important;
