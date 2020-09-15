@@ -194,7 +194,7 @@ h2 {
 
 .blog__link a {
   text-decoration: underline !important;
-  color: #ee0909 !important;
+  color: #003865 !important;
 }
 
 .newsletter__title {
@@ -243,7 +243,7 @@ h2 {
 
   .column1-2__left {
     margin: 0 -25px 0px 25px !important;
-    padding: 25px !important;
+    padding: 60px 100px 60px 60px !important;
     order: 0;
   }
 
@@ -259,7 +259,7 @@ h2 {
   }
 
   .column3-4_right--text {
-    padding: 50px 50px 50px 50px !important;
+    padding: 60px 100px 60px 85px !important;
     margin: -25px 0 0 !important;
   }
 
@@ -276,7 +276,7 @@ h2 {
   }
 
   .column__right--text, .column__left--text {
-    padding: 25px !important;
+    padding: 60px 100px 60px 60px !important;
   }
 
   .heroes__container {
