@@ -53,7 +53,7 @@ h2 {
 }
 
 .heroes__popup {
-  width: 90%;
+  width: 90% !important;
 }
 
 @media (min-width: 1440px) {
