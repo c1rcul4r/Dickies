@@ -75,7 +75,7 @@ h2 {
   z-index: 1;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .heroes__image {
     max-width: unset !important;
     min-width: unset !important;
