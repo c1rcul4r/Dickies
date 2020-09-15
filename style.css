@@ -53,7 +53,18 @@ h2 {
 }
 
 .heroes__popup {
-  width: 90% !important;
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
 }
 
 @media (min-width: 1440px) {
@@ -63,6 +74,21 @@ h2 {
     flex: 1 0 20%;
     filter: grayscale(100%);
   }
+
+  .heroes__popup {
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+  }
 }
 
 .heroes__image:hover {
@@ -71,21 +97,6 @@ h2 {
 
 .home-instagram-image:before {
   background: none;
-}
-
-.heroes__popup {
-  position: absolute;
-  visibility: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  z-index: 1;
 }
 
 .show {
