@@ -80,6 +80,11 @@ h2 {
   margin-bottom: 0 !important;
 }
 
+.text__body {
+  font-size: 22px;
+  line-height: 24px;
+}
+
 @media (min-width: 768px) {
   h2 {
     font-family: league-gothic, sans-serif !important;
@@ -90,6 +95,11 @@ h2 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     font-size: 5.5rem !important;
+  }
+
+  .text__body {
+    font-size: 24px;
+    line-height: 26px;
   }
 
   .hp__column {
