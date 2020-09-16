@@ -243,18 +243,34 @@ h2 {
   text-decoration: none !important;
 }
 
-.newsletter__container {
-  padding: 25px !important;
-}
-
 .block.newsletter.banner__v4 .form.subscribe {
   padding: 0 !important;
+  float: left !important;
 }
 
 @media (min-width: 768px) {
 .block.newsletter.banner__v4 .form.subscribe {
-    float: left;
+    float: left !important;
 }
+}
+
+@media (max-width: 768px) {
+.newsletter__container {
+  padding: 25px !important;
+  flex-basis: 100% !important;
+}
+}
+
+@media (max-width: 1020px) {
+  .newsletter__container {
+  padding: 10px 40px !important;
+  flex-basis: unset !important;
+}
+
+@media (min-width: 1020px) {
+  .newsletter__container {
+  padding: 10px 120px !important;
+  flex-basis: unset !important;
 }
 
 @media (min-width: 768px) {
@@ -265,11 +281,6 @@ h2 {
     font-weight: 400 !important;
     font-style: normal !important;
   }
-
-  .newsletter__container {
-    padding: 10px 120px !important;
-  }
-
 
   .heroes__remove {
     background: transparent !important;
