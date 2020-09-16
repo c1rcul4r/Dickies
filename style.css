@@ -75,7 +75,16 @@ h2 {
   z-index: 1;
 }
 
+.hp__column {
+  max-width: 400px !important;
+  margin-bottom: 0 !important;
+}
+
 @media (min-width: 768px) {
+  .hp__column {
+    max-width: 400px !important;
+  }
+
   .heroes__image {
     max-width: unset !important;
     min-width: unset !important;
@@ -210,7 +219,7 @@ h2 {
 }
 
 .newsletter__container {
-  padding: 10px 120px !important;
+  padding: 25px !important;
 }
 
 @media (min-width: 768px) {
@@ -229,7 +238,7 @@ h2 {
   }
 
   .newsletter__container {
-    padding: 25px !important;
+    padding: 10px 120px !important;
   }
 
 
