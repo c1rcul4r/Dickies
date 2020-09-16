@@ -272,6 +272,7 @@ h2 {
   padding: 10px 120px !important;
   flex-basis: unset !important;
 }
+}
 
 @media (min-width: 768px) {
   .newsletter__title strong{
