@@ -222,6 +222,10 @@ h2 {
   padding: 25px !important;
 }
 
+.block.newsletter.banner__v4 .form.subscribe {
+  padding: 0 !important;
+}
+
 @media (min-width: 768px) {
 .block.newsletter.banner__v4 .form.subscribe {
     float: left;
