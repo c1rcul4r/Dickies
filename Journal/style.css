@@ -27,6 +27,7 @@
 }
 
 .journal__topstories .journal__categorypage--description h6 {
+  font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
   color: white;
   letter-spacing: 0;
