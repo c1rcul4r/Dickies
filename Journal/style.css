@@ -92,6 +92,7 @@
 
 .journal__thumbs {
   width: 100%;
+  min-height: unset !important;
 }
 
 .journal__thumbs:after {
@@ -104,6 +105,36 @@
   content: "";
   display: block;
   padding-bottom: 80%;
+}
+
+.journal__sliderthumbs {
+  border-top: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+}
+
+.journal__menu {
+  border-bottom: 1px solid black !important;
+}
+
+.journal__menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.journal__menu ul li {
+  display: inline;
+list-style-type: none;
+padding-right: 50px;
+}
+
+.journal__menu ul li a{
+  font-size: 2.5rem;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+}
+
+.journal__sliderthumbs .pagebuilder-column div{
+  background-color: #F4F4F4;
 }
 
 @media only screen and (max-width: 768px) {
