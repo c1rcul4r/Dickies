@@ -60,6 +60,10 @@
   display: none !important;
 }
 
+.journal__sliderthumbs .journal__thumbs {
+  background-size: cover !important;
+}
+
 .journal__sliderthumbs .journal__thumbsdescription--category {
   display: block !important;
 }
