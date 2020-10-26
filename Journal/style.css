@@ -75,25 +75,19 @@
 .journal__sliderthumbs .journal__categorypage--description h6 {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
-  color: white;
   letter-spacing: 0;
   margin: 0 !important;
 }
 
 .journal__sliderthumbs .journal__categorypage--description h2 {
   font-weight: 500;
-  color: white;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 0;
   margin: 0 !important;
 }
 
 .journal__sliderthumbs .pagebuilder-column {
   width: 33.3333% !important;
-}
-
-.journal__sliderthumbs .widget {
-  background-color: #F4F4F4 !important;
 }
 
 .journal__thumbs {
@@ -104,6 +98,12 @@
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+
+.journal__sliderthumbs .journal__thumbs:after {
+  content: "";
+  display: block;
+  padding-bottom: 80%;
 }
 
 @media only screen and (max-width: 768px) {
