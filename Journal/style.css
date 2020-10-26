@@ -32,6 +32,7 @@
   color: white;
   letter-spacing: 0;
   text-align: center;
+    margin: 0 !important;
 }
 
 .journal__topstories .journal__categorypage--description h2 {
@@ -40,6 +41,7 @@
   font-size: 2.5rem;
   letter-spacing: 0;
   text-align: center;
+    margin: 0 !important;
 }
 
 .journal__categorypage--description {
@@ -67,14 +69,19 @@
 }
 
 .journal__sliderthumbs .journal__categorypage--description h6 {
+  font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
+  color: white;
   letter-spacing: 0;
+  margin: 0 !important;
 }
 
 .journal__sliderthumbs .journal__categorypage--description h2 {
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  font-size: 2.5rem;
   letter-spacing: 0;
+  margin: 0 !important;
 }
 
 .journal__sliderthumbs .pagebuilder-column {
