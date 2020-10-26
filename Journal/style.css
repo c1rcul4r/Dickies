@@ -7,6 +7,13 @@
   letter-spacing: 0;
 }
 
+.category-circular-journal #maincontent h5 {
+  font-family: 'Helvetica Bold','Arial Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  letter-spacing: 0;
+}
+
 .journal__topstories .journal__categorypage--description {
   position: absolute;
   top: 0;
