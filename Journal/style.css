@@ -85,6 +85,11 @@
   background-color: #F4F4F4 !important;
 }
 
+.journal__thumbs {
+  width: 40vw !important;
+  height: 40vw !important;
+}
+
 @media only screen and (max-width: 768px) {
   .journal__sliderthumbs {
     white-space: nowrap !important;
