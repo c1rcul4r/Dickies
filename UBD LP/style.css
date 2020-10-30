@@ -372,3 +372,7 @@ h1 {
     min-width: 100% !important;
   }
 }
+
+.pagebuilder-column.newsletter__container {
+    width: 100% !important;
+}
