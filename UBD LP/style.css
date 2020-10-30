@@ -1,6 +1,6 @@
 /* © CIRCULAR AGENCY */
 h1 {
-  font-family: helvetica, sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
@@ -8,7 +8,7 @@ h1 {
 }
 
 .title__banner h1 {
-  font-family: helvetica, sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  font-family: helvetica, sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
@@ -89,9 +89,20 @@ h2 {
   width: 100% !important;
 }
 
+@media (min-width: 1024px), print {
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  	font-weight: 400;
+  	font-style: normal;
+ 	letter-spacing: -0.9px;
+ 	margin-bottom: 0 !important;
+    font-size: 6rem;
+    }
+}
+
 @media (min-width: 768px) {
   h2 {
-    font-family: helvetica, sans-serif !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 400;
     font-style: normal;
     letter-spacing: -0.9px;
