@@ -361,3 +361,10 @@ h2 {
     min-width: 100% !important;
   }
 }
+
+
+@media (max-width: 375px) {
+.pagebuilder-column.newsletter__container {
+    width: 100% !important;
+}
+}
