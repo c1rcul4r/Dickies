@@ -1,4 +1,4 @@
-/* © CIRCULAR AGENCY */
+.featured .row1/* © CIRCULAR AGENCY */
 /* General */
 .page-title-wrapper {
   display: none !important
@@ -22,7 +22,7 @@
   margin: 2% 0 4% !important
 }
 
-.journal__topstories .journal__categorypage--description .pagebuilder-button-link {
+.featured .thumbs__description .pagebuilder-button-link {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
   color: #fff;
@@ -33,7 +33,7 @@
   text-decoration: none !important
 }
 
-.journal__topstories .journal__categorypage--description h2 {
+.featured .thumbs__description h2 {
   width: 60%;
   font-weight: 500;
   color: #fff;
@@ -44,7 +44,7 @@
   text-transform: uppercase !important
 }
 
-.journal__sliderthumbs .journal__categorypage--description .pagebuilder-button-link {
+.journal__sliderthumbs .thumbs__description .pagebuilder-button-link {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
   letter-spacing: 0;
@@ -54,7 +54,7 @@
   padding: 0 !important
 }
 
-.journal__sliderthumbs .journal__categorypage--description h2 {
+.journal__sliderthumbs .thumbs__description h2 {
   font-weight: 500;
   font-size: 1.75rem;
   letter-spacing: 0;
@@ -62,7 +62,7 @@
   text-transform: uppercase !important
 }
 
-.journal__topstories .container .button {
+.featured .row1 .description .button {
   text-transform: uppercase;
   color: #000 !important;
   font-family: 'Source Code Pro', monospace;
@@ -76,13 +76,13 @@
   text-align: right !important
 }
 
-.journal__topstories .container .button .pagebuilder-button-link {
+.featured .row1 .description .button .pagebuilder-button-link {
   margin: 0 !important;
   padding: 0 !important;
   text-align: right !important
 }
 
-.journal__topstories .container .caption {
+.featured .row1 .description .caption {
   color: #000 !important;
   font-weight: 400;
   font-size: 2rem !important;
@@ -92,11 +92,11 @@
   bottom: 80px
 }
 
-.journal__topstories .container .category p {
+.featured .row1 .description .category p {
   margin: 0 !important
 }
 
-.journal__topstories .container .category .pagebuilder-button-link {
+.featured .row1 .description .category .pagebuilder-button-link {
   font-weight: 400 !important;
   line-height: 1.8461 !important;
   font-size: 1.3rem !important;
@@ -105,7 +105,7 @@
   text-decoration: none !important
 }
 
-.journal__topstories .container .info {
+.featured .row1 .description .info {
   font-family: 'Source Code Pro', monospace
 }
 
@@ -122,7 +122,7 @@
   font-size: 1.5rem !important
 }
 
-.ontop__container .journal__categorypage--description h2 {
+.featured .row1 .thumbs__description h2 {
   font-size: 3rem !important;
   width: 80% !important;
   text-transform: uppercase !important
@@ -154,7 +154,7 @@
     margin: 2% 0 4% !important
   }
 
-  .journal__topstories .journal__categorypage--description h2 {
+  .featured .thumbs__description h2 {
     width: 95%;
     font-weight: 500;
     color: #fff;
@@ -165,7 +165,7 @@
     text-transform: uppercase !important
   }
 
-  .ontop__container .journal__categorypage--description h2 {
+  .featured .row1 .thumbs__description h2 {
     font-size: 1.75rem !important;
     width: 95% !important;
     text-transform: uppercase !important
@@ -177,7 +177,7 @@
     text-decoration: none !important
   }
 
-  .journal__sliderthumbs .journal__categorypage--description h2 {
+  .journal__sliderthumbs .thumbs__description h2 {
     font-weight: 500;
     font-size: 1.5rem;
     letter-spacing: 0;
@@ -203,13 +203,13 @@
 }
 
 /* Sitewide */
-.journal__menu, .journal__sliderthumbs, .journal__topstories, .journal__topstories .pagebuilder-column {
+.journal__menu, .journal__sliderthumbs, .journal__featured, .featured .pagebuilder-column {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto !important
 }
 
-.journal__thumbs {
+.thumbs{
   width: 100%;
   min-height: unset !important
 }
@@ -223,11 +223,11 @@
 @media only screen and (max-width:768px) {}
 
 /* Journal */
-.journal__categorypage--description, .journal__thumbsdescription--category {
+.thumbs__description, .thumbs__description .category {
   display: block !important
 }
 
-.journal__categorypage .journal__categorypage--description, .journal__sliderthumbs .journal__categorypage--description {
+.journal__categorypage .thumbs__description, .journal__sliderthumbs .thumbs__description {
   display: flex !important
 }
 
@@ -319,17 +319,17 @@
 }
 
 /* Featured Articles */
-.journal__topstories .journal__categorypage--description {
+.featured .thumbs__description {
   position: absolute;
   top: 0
 }
 
-.journal__topstories .pagebuilder-column {
+.featured .pagebuilder-column {
   width: calc(var(--twocolumn)/2) !important;
   padding: 0 !important
 }
 
-.journal__topstories .journal__categorypage--description {
+.featured .thumbs__description {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -337,16 +337,16 @@
   width: 100%
 }
 
-.journal__topstories {
+.featured {
   padding: 0 0 5% !important
 }
 
-.journal__topstories .container {
+.featured .row1 .description {
   padding: 40px !important;
   position: relative !important
 }
 
-.journal__topstories .container .category {
+.featured .row1 .description .category {
   text-transform: uppercase;
   background-color: #e4cfbf !important;
   color: #000 !important;
@@ -356,38 +356,38 @@
   padding: 0 10px !important
 }
 
-.ontop__container {
+.featured .row1 {
   margin-bottom: 4vh !important
 }
 
-.ontop__container .journal__categorypage--description .journal__thumbsdescription--category {
+.featured .row1 .thumbs__description .thumbs__description .category {
   display: none !important
 }
 
-.journal__topstories .pagebuilder-button-secondary {
+.featured .pagebuilder-button-secondary {
   margin: 0 !important
 }
 
 @media only screen and (max-width:768px) {
-  .journal__topstories .container {
+  .featured .row1 .description {
     display: none !important
   }
 
-  .ontop__container .journal__categorypage--description .journal__thumbsdescription--category {
+  .featured .row1 .thumbs__description .thumbs__description .category {
     display: block !important
   }
 
-  .journal__topstories .pagebuilder-column:last-child {
+  .featured .pagebuilder-column:last-child {
     display: none !important;
     padding: 0 !important
   }
 
-  .journal__topstories [data-content-type=buttons] {
+  .featured [data-content-type=buttons] {
     padding-top: 5vh !important;
     padding-bottom: 3vh !important
   }
 
-  .journal__topstories .journal__categorypage--description h6 {
+  .featured .thumbs__description h6 {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.2rem;
     color: #fff;
@@ -399,15 +399,15 @@
 }
 
 /* Latest Slider */
-.journal__sliderthumbs .journal__categorypage--description .journal__thumbsdescription--caption, .journal__thumbsdescription--caption {
+.journal__sliderthumbs .thumbs__description .thumbs__description .caption, .thumbs__description .caption {
   display: none !important
 }
 
-.journal__sliderthumbs .journal__thumbs {
+.journal__sliderthumbs .thumbs{
   background-size: cover !important
 }
 
-.journal__sliderthumbs .journal__thumbsdescription--category {
+.journal__sliderthumbs .thumbs__description .category {
   display: block !important;
   padding: 0 !important
 }
@@ -422,7 +422,7 @@
   padding-bottom: 85%
 }
 
-.journal__sliderthumbs .journal__categorypage--description {
+.journal__sliderthumbs .thumbs__description {
   padding: 5% 5% 0 !important
 }
 
@@ -452,7 +452,7 @@
   height: 0
 }
 
-.journal__sliderthumbs .pagebuilder-column-group, .journal__topstories .pagebuilder-column-group {
+.journal__sliderthumbs .pagebuilder-column-group, .featured .pagebuilder-column-group {
   display: flex;
   justify-content: space-between !important
 }
