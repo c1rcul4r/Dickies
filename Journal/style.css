@@ -1,28 +1,32 @@
-.featured .row1/* © CIRCULAR AGENCY */
+/* © CIRCULAR AGENCY */
 /* General */
 .page-title-wrapper {
   display: none !important
 }
 
+
+
 /* Typography */
-.category-journal #maincontent h1, .category-journal #maincontent h5 {
+.category-journal #maincontent h1, .category-journal #maincontent h5, .category-products #maincontent h5 {
   font-family: 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
-  letter-spacing: 0
+  letter-spacing: 0;
+  text-transform:  uppercase !important;
 }
 
 .category-journal #maincontent h1 {
   font-size: 5rem;
-  padding-bottom: 7.5%;
+  padding-bottom: 5vh;
   margin: 0 !important
 }
 
-.category-journal #maincontent h5 {
+.category-journal #maincontent h5,
+.category-products #maincontent h5 {
   font-size: 3.5rem;
   margin: 2% 0 4% !important
 }
 
-.featured .thumbs__description .pagebuilder-button-link {
+.featured .thumbs-description .pagebuilder-button-link {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
   color: #fff;
@@ -33,7 +37,7 @@
   text-decoration: none !important
 }
 
-.featured .thumbs__description h2 {
+.featured .thumbs-description h2 {
   width: 60%;
   font-weight: 500;
   color: #fff;
@@ -44,7 +48,7 @@
   text-transform: uppercase !important
 }
 
-.journal__sliderthumbs .thumbs__description .pagebuilder-button-link {
+.latest-slider .thumbs-description .pagebuilder-button-link {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
   letter-spacing: 0;
@@ -54,7 +58,7 @@
   padding: 0 !important
 }
 
-.journal__sliderthumbs .thumbs__description h2 {
+.latest-slider .thumbs-description h2 {
   font-weight: 500;
   font-size: 1.75rem;
   letter-spacing: 0;
@@ -62,7 +66,7 @@
   text-transform: uppercase !important
 }
 
-.featured .row1 .description .button {
+.featured.row1 .description .button {
   text-transform: uppercase;
   color: #000 !important;
   font-family: 'Source Code Pro', monospace;
@@ -76,13 +80,13 @@
   text-align: right !important
 }
 
-.featured .row1 .description .button .pagebuilder-button-link {
+.featured.row1 .description .button .pagebuilder-button-link {
   margin: 0 !important;
   padding: 0 !important;
   text-align: right !important
 }
 
-.featured .row1 .description .caption {
+.featured.row1 .description .caption {
   color: #000 !important;
   font-weight: 400;
   font-size: 2rem !important;
@@ -92,11 +96,11 @@
   bottom: 80px
 }
 
-.featured .row1 .description .category p {
+.featured.row1 .description .category p {
   margin: 0 !important
 }
 
-.featured .row1 .description .category .pagebuilder-button-link {
+.featured.row1 .description .category .pagebuilder-button-link {
   font-weight: 400 !important;
   line-height: 1.8461 !important;
   font-size: 1.3rem !important;
@@ -105,11 +109,11 @@
   text-decoration: none !important
 }
 
-.featured .row1 .description .info {
+.featured.row1 .description .info {
   font-family: 'Source Code Pro', monospace
 }
 
-.journal__homebanner h1 {
+.journal-slideshow h1 {
   color: #fff !important;
   text-transform: uppercase;
   font-weight: 500;
@@ -117,12 +121,12 @@
   width: 50%
 }
 
-.journal__homebanner [data-content-type=text] span {
+.journal-slideshow [data-content-type=text] span {
   color: #fff !important;
   font-size: 1.5rem !important
 }
 
-.featured .row1 .thumbs__description h2 {
+.featured.row1 .thumbs-featured .thumbs-description h2 {
   font-size: 3rem !important;
   width: 80% !important;
   text-transform: uppercase !important
@@ -138,7 +142,7 @@
     margin: 0 !important
   }
 
-  .journal__homebanner h1 {
+  .journal-slideshow h1 {
     color: #fff !important;
     text-transform: uppercase;
     font-weight: 500;
@@ -146,7 +150,8 @@
     width: 95%
   }
 
-  .category-journal #maincontent h5 {
+  .category-journal #maincontent h5,
+  .category-products #maincontent h5 {
     font-family: 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 2rem;
@@ -154,7 +159,7 @@
     margin: 2% 0 4% !important
   }
 
-  .featured .thumbs__description h2 {
+  .featured .thumbs-description h2 {
     width: 95%;
     font-weight: 500;
     color: #fff;
@@ -165,19 +170,19 @@
     text-transform: uppercase !important
   }
 
-  .featured .row1 .thumbs__description h2 {
+  .featured.row1 .thumbs-featured .thumbs-description h2 {
     font-size: 1.75rem !important;
     width: 95% !important;
     text-transform: uppercase !important
   }
 
-  .journal__menu ul li a {
+  .journal-menu ul li a {
     font-size: 13px;
     text-transform: uppercase !important;
     text-decoration: none !important
   }
 
-  .journal__sliderthumbs .thumbs__description h2 {
+  .latest-slider .thumbs-description h2 {
     font-weight: 500;
     font-size: 1.5rem;
     letter-spacing: 0;
@@ -188,8 +193,8 @@
 
 /* Utilities */
 :root {
-  --threecolumn: calc(100% - 15%);
-  --twocolumn: calc(100% - 13%)
+  --threecolumn: calc(100% - 4%);
+  --twocolumn: calc(100% - 2%)
 }
 
 .nopadding {
@@ -203,18 +208,27 @@
 }
 
 /* Sitewide */
-.journal__menu, .journal__sliderthumbs, .journal__featured, .featured .pagebuilder-column {
+.journal-menu, .journal__sliderthumbs, .journal__featured, .featured .pagebuilder-column {
   width: 90%;
   max-width: 1440px;
-  margin: 0 auto !important
+  margin: 0 auto !important;
 }
 
 .thumbs{
   width: 100%;
-  min-height: unset !important
+  min-height: unset !important;
+  position: relative;
 }
 
-.journal__thumbs:after {
+.thumbs::before {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  content: "";
+  backdrop-filter: brightness(0.7);
+}
+
+.thumbs:after {
   content: "";
   display: block;
   padding-bottom: 100%
@@ -223,113 +237,148 @@
 @media only screen and (max-width:768px) {}
 
 /* Journal */
-.thumbs__description, .thumbs__description .category {
+.thumbs-description > * {
+  z-index: 10;
+}
+
+.thumbs-description, .thumbs-description .category {
   display: block !important
 }
 
-.journal__categorypage .thumbs__description, .journal__sliderthumbs .thumbs__description {
+.journal__categorypage .thumbs-description, .latest-slider .thumbs-description {
   display: flex !important
 }
 
-.journal__homebanner {
+.journal-slideshow {
   position: relative;
-  height: calc(90vh) !important;
+  background-size: 100vw !important;
+  height: 50vw !important;
   justify-content: center !important;
   align-items: center !important
 }
 
-.journal__homebanner [data-content-type=buttons] {
+.journal-slideshow > * {
+  z-index: 10;
+}
+
+.journal-slideshow::before {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  backdrop-filter: brightness(0.7);
+}
+
+.journal-slideshow [data-content-type=buttons] {
   position: absolute !important;
   bottom: 5vh !important;
   padding: 0 !important
 }
 
 @media only screen and (max-width:768px) {
-  .journal__homebanner {
+  .journal-slideshow {
     position: relative;
-    height: calc(50vh) !important;
+    background-size: cover !important;
+    width: 100vw !important;
+    height: 129.5vw !important;
     justify-content: center !important;
     align-items: center !important
   }
 }
 
 /* Menu */
-.journal__menu, .journal__menu .pagebuilder-column-group .menu__list {
+.journal-menu, .journal-menu .pagebuilder-column-group .menu__list {
   display: flex;
   justify-content: center !important;
   flex-direction: row !important
 }
 
-.journal__menu {
+.journal-menu {
   border-bottom: 1px solid #000 !important;
-  padding: 0 !important
+  padding: 0 !important;
+  margin-bottom: 5vh !important;
 }
 
-.journal__menu .pagebuilder-column-group .menu__list {
+.journal-menu .pagebuilder-column-group .menu__list {
   max-width: 500px !important;
   margin: 0 !important
 }
 
-.journal__menu .menu__item {
+.journal-menu .item {
   padding: 20px !important
 }
 
-.journal__menu .pagebuilder-button-link, .journal__menu ul li a {
+.journal-menu .pagebuilder-button-link, .journal-menu ul li a {
   text-transform: uppercase !important;
   text-decoration: none !important
 }
 
-.journal__menu .pagebuilder-button-link {
+.journal-menu .pagebuilder-button-link {
   padding: 0 !important;
   margin: 0 !important;
   font-size: 18px !important;
   font-weight: 400 !important
 }
 
-.journal__menu ul li {
+.journal-menu ul li {
   display: inline;
   list-style-type: none;
   padding-right: 50px
 }
 
-.journal__menu ul li a {
+.journal-menu ul li a {
   font-size: 18px
 }
 
 @media only screen and (max-width:768px) {
-  .journal__menu {
-    width: 100%;
+  .journal-menu {
+    width: 90%;
     max-width: 1440px;
     margin: 0 auto !important;
+    margin-bottom: 5vh !important;
     padding: 0 !important
   }
 
-  .journal__menu ul {
+  .journal-menu ul {
     display: flex;
     justify-content: center;
     margin: 0 !important;
     padding: 0 !important
   }
 
-  .journal__menu ul li:last-child {
+  .journal-menu ul li:last-child {
     display: inline;
     list-style-type: none;
     padding-right: 0
   }
+
+  .journal-menu .pagebuilder-button-link {
+    font-size: 13px !important;
+  }
 }
 
 /* Featured Articles */
-.featured .thumbs__description {
+.featured .thumbs-description {
   position: absolute;
   top: 0
 }
 
-.featured .pagebuilder-column {
-  width: calc(var(--twocolumn)/2) !important;
+.featured .thumbs-description::before {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  content: "";
+  backdrop-filter: brightness(0.7);
+}
+
+.featured .pagebuilder-column,
+.category-products .list .pagebuilder-column {
+  width: 100% !important;
   padding: 0 !important
 }
 
-.featured .thumbs__description {
+.featured .thumbs-description {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -337,16 +386,19 @@
   width: 100%
 }
 
-.featured {
-  padding: 0 0 5% !important
+.featured,
+.category-products .list {
+  padding: 0 !important;
+  width: 90% !important;
+  margin: 0 auto !important;
 }
 
-.featured .row1 .description {
+.featured.row1 .description {
   padding: 40px !important;
   position: relative !important
 }
 
-.featured .row1 .description .category {
+.featured.row1 .description .category {
   text-transform: uppercase;
   background-color: #e4cfbf !important;
   color: #000 !important;
@@ -356,11 +408,11 @@
   padding: 0 10px !important
 }
 
-.featured .row1 {
+.featured.row1 {
   margin-bottom: 4vh !important
 }
 
-.featured .row1 .thumbs__description .thumbs__description .category {
+.featured.row1 .thumbs-featured .thumbs-description .category {
   display: none !important
 }
 
@@ -369,11 +421,11 @@
 }
 
 @media only screen and (max-width:768px) {
-  .featured .row1 .description {
+  .featured.row1 .description {
     display: none !important
   }
 
-  .featured .row1 .thumbs__description .thumbs__description .category {
+  .featured.row1 .thumbs-featured .thumbs-description .category {
     display: block !important
   }
 
@@ -387,7 +439,7 @@
     padding-bottom: 3vh !important
   }
 
-  .featured .thumbs__description h6 {
+  .featured .thumbs-description h6 {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.2rem;
     color: #fff;
@@ -399,93 +451,191 @@
 }
 
 /* Latest Slider */
-.journal__sliderthumbs .thumbs__description .thumbs__description .caption, .thumbs__description .caption {
+.latest-slider {
+  width: 90% !important;
+  margin: 0 auto !important;
+}
+
+.latest-slider .thumbs-featured .thumbs-description .caption, .thumbs-description .caption {
   display: none !important
 }
 
-.journal__sliderthumbs .thumbs{
+.latest-slider .thumbs{
   background-size: cover !important
 }
 
-.journal__sliderthumbs .thumbs__description .category {
+.latest-slider .thumbs-description .category {
   display: block !important;
   padding: 0 !important
 }
 
-.journal__sliderthumbs .pagebuilder-column {
+.latest-slider .pagebuilder-column {
   width: 33.3333% !important
 }
 
-.journal__sliderthumbs .journal__thumbs:after {
+.latest-slider .thumbs:after {
   content: "";
   display: block;
   padding-bottom: 85%
 }
 
-.journal__sliderthumbs .thumbs__description {
+.latest-slider .thumbs-description {
   padding: 5% 5% 0 !important
 }
 
-.journal__sliderthumbs, .journal__sliderthumbs--title {
+.journal__sliderthumbs, .latest-slider.title {
   border-top: 1px solid #000 !important;
   border-bottom: 1px solid #000 !important;
-  padding: 0 0 5% !important
+  padding: 0 !important
 }
 
-.journal__sliderthumbs--title {
+.latest-slider.title {
   border-bottom: unset !important
 }
 
-.journal__sliderthumbs--slider {
+.latest-slider.slider {
   border-top: unset !important;
   border-bottom: 1px solid #000 !important;
   padding: 0 0 5% !important
 }
 
-.journal__sliderthumbs .pagebuilder-column {
+.latest-slider .pagebuilder-column {
   padding: 0 !important;
-  width: calc(var(--threecolumn)/3) !important
+  width: 100% !important
 }
 
-.journal__sliderthumbs .pagebuilder-column [data-content-type=block] {
+.latest-slider .pagebuilder-column [data-content-type=block] {
   padding-bottom: 125% !important;
   height: 0
 }
 
-.journal__sliderthumbs .pagebuilder-column-group, .featured .pagebuilder-column-group {
+.latest-slider .pagebuilder-column-group, .featured .pagebuilder-column-group {
   display: flex;
   justify-content: space-between !important
 }
 
-.journal__sliderthumbs .pagebuilder-column div {
+.featured .pagebuilder-column-group,
+.category-products .list .pagebuilder-column-group {
+  display: grid !important;
+  grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+}
+
+.latest-slider .pagebuilder-column-group {
+  display: grid !important;
+  grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+}
+
+.latest-slider .pagebuilder-column div {
   background-color: #f4f4f4
 }
 
 @media only screen and (max-width:768px) {
-  .journal__sliderthumbs, .journal__sliderthumbs .pagebuilder-column-group {
+  .latest-slider.slider, .latest-slider .pagebuilder-column-group {
     overflow: auto !important;
     flex-wrap: nowrap !important;
-    cursor: grab
+    cursor: grab;
+    display: flex !important;
   }
 
-  .journal__sliderthumbs .pagebuilder-column-group {
+  .latest-slider .pagebuilder-column-group {
     width: 240vw !important
   }
 
-  .journal__sliderthumbs .pagebuilder-column {
+  .latest-slider .pagebuilder-column {
     width: 80% !important;
     margin: 2.5vw !important
   }
 
-  .journal__sliderthumbs--title {
+  .latest-slider.title {
     border-top: 1px solid #000 !important;
     border-bottom: unset !important;
     padding: 5% 0 !important
+  }
+
+  .featured .pagebuilder-column-group,
+  .category-products .list .pagebuilder-column-group {
+    display: grid !important;
+    grid-template-columns: 100%;
+      grid-gap: 2%;
   }
 }
 
 /* Latest Articles */
 @media only screen and (max-width:768px) {}
 
-/* Category */
-@media only screen and (max-width:768px) {}
+/* Category - Product */
+
+.category-products .top-stories {
+
+}
+
+.category-products .top-stories h2 {
+
+}
+
+.category-products .top-stories .caption {
+
+}
+
+.category-products .top-stories .image {
+
+}
+
+.category-products .list .thumbs-description .category {
+  display: none !important;
+}
+
+.category-products .list {
+  margin-top: 4vw !important;
+margin-bottom: 4vw !important;
+}
+
+.category-products .list .thumbs-description .caption {
+  display: block !important;
+}
+
+.category-products .thumbs-description h2 {
+  width: 60%;
+  font-weight: 500;
+  color: #000;
+  font-size: 2.5rem;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0 !important;
+  text-transform: uppercase !important
+}
+
+.category-products .top-stories [data-content-type="banner"] {
+  padding-bottom: 4vw !important;
+  border-bottom: 1px solid #000 !important;
+}
+
+.category-products .top-stories [data-content-type="banner"] .pagebuilder-overlay {
+  height: 40vw !important;
+}
+
+.category-products .top-stories .pagebuilder-button-link {
+  text-transform: uppercase;
+  color: #000 !important;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 1.3rem !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+@media only screen and (max-width:768px) {
+  .category-products .thumbs-description h2 {
+    width: 95%;
+    font-weight: 500;
+    color: #000;
+    font-size: 1.75rem;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0 !important;
+    text-transform: uppercase !important
+  }
+}
