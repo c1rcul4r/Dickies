@@ -1,100 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
 #bf__countdown {
- font-family: 'Source Code Pro', monospace !important;
- mix-blend-mode: difference;
- margin: 0 !important;
- color: white !important;
-font-size: 3.5rem
+  font-family: 'Source Code Pro', monospace !important;
+  mix-blend-mode: difference;
+  margin: 0 !important;
+  color: white !important;
+  font-size: 3.5rem
 }
 
 .bf_countdown--back .row-full-width-inner {
- position: absolute;
- width: 100%;
- height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bf_countdown--back {
- height: 10.75vw;
- width: 100vw;
- position: relative;
- min-width: 100vw !important;
- max-height: 155px !important;
+  height: 10.75vw;
+  width: 100vw;
+  position: relative;
+  min-width: 100vw !important;
+  max-height: 155px !important;
   background-color: #000000 !important;
 }
 
 .vimeo-wrapper {
-   position: relative;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-   max-height: 810px;
-   max-width: 1440px; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-   pointer-events: all;
-   cursor: pointer;
-   overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  max-height: 810px;
+  max-width: 1440px;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  pointer-events: all;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.vimeo-wrapper [data-content-type="html"]{
-   width: 100%;
-   height: 100%;
+.vimeo-wrapper [data-content-type="html"] {
+  width: 100%;
+  height: 100%;
 }
 
 .vimeo-wrapper .clickable {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-   max-height: 810px;
-   max-width: 1440px; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-   pointer-events: all;
-   overflow: hidden;
-   display: flex;
-   align-items: center;
-   text-decoration: none !important;
-   z-index: 100000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  max-height: 810px;
+  max-width: 1440px;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  pointer-events: all;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  z-index: 100000;
 }
 
 .vimeo-wrapper .clickable a {
-   width: 100%;
-   height: 100%;
-   padding: 0 !important;
-   margin: 0 !important;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .vimeo-wrapper iframe.desktop {
   display: block;
-   width: 100vw;
-   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-   max-height: 810px;
-   max-width: 1440px; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   pointer-events: all !important;
-   cursor: pointer !important;
+  width: 100vw;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  max-height: 810px;
+  max-width: 1440px;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all !important;
+  cursor: pointer !important;
 }
 
 .vimeo-wrapper iframe.mobile {
   display: none;
-   width: 100vw;
-   height: 125vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-   max-height: 517.5px;
-   max-width: 414px; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   pointer-events: all !important;
-   cursor: pointer !important;
+  width: 100vw;
+  height: 125vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  max-height: 517.5px;
+  max-width: 414px;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all !important;
+  cursor: pointer !important;
 }
 
 .bf-home.grid-row .pagebuilder-column-group img {
@@ -134,7 +140,7 @@ align-items: center;
 }
 
 .cms-circular-bf-homepage .page-wrapper,
-.cms-index-index .page-wrapper{
+.cms-index-index .page-wrapper {
   background-color: black !important;
 }
 
@@ -163,35 +169,117 @@ align-items: center;
 }
 
 h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    font-weight: 500 !important;
-    font-style: normal;
-    letter-spacing: 0px;
-    line-height: 1 !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    font-size: 4.5rem !important;
-  }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  letter-spacing: 0px;
+  line-height: 1 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: 4.5rem !important;
+}
 
-  h1
-  {
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal;
+  letter-spacing: -0.9px;
+  margin-bottom: 0 !important;
+  line-height: 110%;
+}
+
+.title__banner h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal;
+  letter-spacing: -0.9px;
+  margin-bottom: 0 !important;
+  line-height: 110%;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  letter-spacing: -0.9px;
+  line-height: 1 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: 3.5rem !important;
+}
+
+.page-title-wrapper {
+  display: none !important;
+}
+
+.column__ontop {
+  z-index: 5;
+}
+
+.home-instagram-image h3 {
+  color: white;
+  font-style: normal;
+  bottom: 0;
+  left: 10px;
+  position: absolute;
+  font-weight: 500;
+  text-decoration: none !important;
+  font-size: 2.5rem;
+  letter-spacing: -0.9px;
+  text-align: left;
+}
+
+.home-instagram-image {
+  position: relative;
+}
+
+.home-instagram {
+  position: relative;
+}
+
+.heroes__image {
+  filter: grayscale(100%);
+  display: inline-block !important;
+}
+
+.heroes__popup {
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.hp__column {
+  max-width: 400px !important;
+  margin-bottom: 0 !important;
+}
+
+.text__body {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+@media (min-width: 1024px), print {
+  h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 700 !important;
     font-style: normal;
     letter-spacing: -0.9px;
     margin-bottom: 0 !important;
+    font-size: 6rem;
     line-height: 110%;
   }
+}
 
-  .title__banner h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    font-weight: 700 !important;
-    font-style: normal;
-    letter-spacing: -0.9px;
-    margin-bottom: 0 !important;
-    line-height: 110%;
-  }
-
+@media (min-width: 768px) {
   h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 500 !important;
@@ -200,41 +288,23 @@ h2 {
     line-height: 1 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    font-size: 3.5rem !important;
+    font-size: 4.5rem !important;
   }
 
-  .page-title-wrapper {
-    display: none !important;
+  .text__body {
+    font-size: 24px;
+    line-height: 26px;
   }
 
-  .column__ontop {
-    z-index: 5;
-  }
-
-  .home-instagram-image h3 {
-    color: white;
-    font-style: normal;
-    bottom: 0;
-    left: 10px;
-    position: absolute;
-    font-weight: 500;
-    text-decoration: none !important;
-    font-size: 2.5rem;
-    letter-spacing: -0.9px;
-    text-align: left;
-  }
-
-  .home-instagram-image {
-    position: relative;
-  }
-
-  .home-instagram {
-    position: relative;
+  .hp__column {
+    max-width: 400px !important;
   }
 
   .heroes__image {
+    max-width: unset !important;
+    min-width: unset !important;
+    flex: 1 0 20%;
     filter: grayscale(100%);
-    display: inline-block !important;
   }
 
   .heroes__popup {
@@ -243,7 +313,7 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 60%;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -251,307 +321,239 @@ h2 {
     user-select: none;
     z-index: 1;
   }
+}
 
-  .hp__column {
-    max-width: 400px !important;
-    margin-bottom: 0 !important;
+.heroes__image:hover {
+  filter: grayscale(0%);
+}
+
+.home-instagram-image:before {
+  background: none;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.bright {
+  filter: brightness(0.2);
+  pointer-events: none !important;
+}
+
+.column1-2__left {
+  padding: 50px 25px !important;
+  margin: -25px 0 0 !important;
+  order: 2;
+}
+
+.column1-2__right {
+  padding: 0 24px !important;
+  margin: 0 !important;
+  z-index: 5;
+}
+
+.column3-4_left--image {
+  padding: 0 24px !important;
+  margin: 0 !important;
+  z-index: 5;
+}
+
+.column3-4_right--text {
+  padding: 25px !important;
+  margin: -25px 0 0 !important;
+}
+
+.column3-4_left--text {
+  padding: 50px 50px 50px 50px !important;
+  margin: -25px 0 0 !important;
+  order: 2;
+}
+
+.column3-4_right--image {
+  padding: 0 24px !important;
+  margin: 0 !important;
+  z-index: 5;
+}
+
+.column__right--text, .column__left--text {
+  padding: 25px !important;
+}
+
+.desktop {
+  display: none !important;
+}
+
+.mobile {
+  display: block !important;
+}
+
+.heroes__remove {
+  background: transparent !important;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: none !important;
+  padding: 10px !important;
+}
+
+.heroes__remove::before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 25px;
+  line-height: 25px;
+  color: #ffffff;
+  content: '\e616';
+  font-family: 'luma-icons';
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 400;
+  overflow: hidden;
+  speak: none;
+  text-align: center;
+}
+
+.blog__link a {
+  text-decoration: underline !important;
+  color: #003865 !important;
+}
+
+.instagram__link a {
+  text-decoration: none !important;
+}
+
+@media (min-width: 1020px) {
+  .newsletter__container {
+    padding: 10px 120px !important;
+    flex-basis: unset !important;
   }
+}
 
-  .text__body {
-    font-size: 22px;
-    line-height: 24px;
-  }
-
-  @media (min-width: 1024px), print {
-  h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-      font-weight: 700 !important;
-      font-style: normal;
-    letter-spacing: -0.9px;
-    margin-bottom: 0 !important;
-      font-size: 6rem;
-    line-height: 110%;
-      }
-  }
-
-  @media (min-width: 768px) {
-    h2 {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-      font-weight: 500 !important;
-      font-style: normal;
-      letter-spacing: -0.9px;
-      line-height: 1 !important;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-      font-size: 4.5rem !important;
-    }
-
-    .text__body {
-      font-size: 24px;
-      line-height: 26px;
-    }
-
-    .hp__column {
-      max-width: 400px !important;
-    }
-
-    .heroes__image {
-      max-width: unset !important;
-      min-width: unset !important;
-      flex: 1 0 20%;
-      filter: grayscale(100%);
-    }
-
-    .heroes__popup {
-      position: absolute;
-      visibility: hidden;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 60%;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      z-index: 1;
-    }
-  }
-
-  .heroes__image:hover {
-    filter: grayscale(0%);
-  }
-
-  .home-instagram-image:before {
-    background: none;
-  }
-
-  .show {
-    visibility: visible;
-  }
-
-  .hide {
-    visibility: hidden;
-  }
-
-  .bright {
-    filter: brightness(0.2);
-    pointer-events: none !important;
-  }
-
-  .column1-2__left {
-    padding: 50px 25px !important;
-    margin: -25px 0 0 !important;
-    order: 2;
-  }
-
-  .column1-2__right {
-    padding: 0 24px !important;
-    margin: 0 !important;
-    z-index: 5;
-  }
-
-  .column3-4_left--image {
-    padding: 0 24px !important;
-    margin: 0 !important;
-    z-index: 5;
-  }
-
-  .column3-4_right--text {
-    padding: 25px !important;
-    margin: -25px 0 0 !important;
-  }
-
-  .column3-4_left--text {
-    padding: 50px 50px 50px 50px !important;
-    margin: -25px 0 0 !important;
-    order: 2;
-  }
-
-  .column3-4_right--image {
-    padding: 0 24px !important;
-    margin: 0 !important;
-    z-index: 5;
-  }
-
-  .column__right--text, .column__left--text {
-    padding: 25px !important;
-  }
-
-  .desktop {
-    display: none !important;
-  }
-
-  .mobile {
-    display: block !important;
-  }
-
+@media (min-width: 768px) {
   .heroes__remove {
     background: transparent !important;
     position: absolute;
     right: 5px;
     top: 5px;
     border: none !important;
-    padding: 10px !important;
+    padding: 0 !important;
   }
 
   .heroes__remove::before {
     -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-size: 25px;
-      line-height: 25px;
-      color: #ffffff;
-      content: '\e616';
-      font-family: 'luma-icons';
-      vertical-align: middle;
-      display: inline-block;
-      font-weight: 400;
-      overflow: hidden;
-      speak: none;
-      text-align: center;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+    content: '\e616';
+    font-family: 'luma-icons';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 400;
+    overflow: hidden;
+    speak: none;
+    text-align: center;
   }
 
-  .blog__link a {
-    text-decoration: underline !important;
-    color: #003865 !important;
+  .desktop {
+    display: block !important;
   }
 
-  .instagram__link a {
-    text-decoration: none !important;
+  .mobile {
+    display: none !important;
   }
 
-  @media (min-width: 1020px) {
-    .newsletter__container {
-    padding: 10px 120px !important;
-    flex-basis: unset !important;
-  }
-  }
-
-  @media (min-width: 768px) {
-
-    .heroes__remove {
-      background: transparent !important;
-      position: absolute;
-      right: 5px;
-      top: 5px;
-      border: none !important;
-      padding: 0 !important;
-    }
-
-    .heroes__remove::before {
-      -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-size: 14px;
-        line-height: 14px;
-        color: #ffffff;
-        content: '\e616';
-        font-family: 'luma-icons';
-        vertical-align: middle;
-        display: inline-block;
-        font-weight: 400;
-        overflow: hidden;
-        speak: none;
-        text-align: center;
-    }
-
-    .desktop {
-      display: block !important;
-    }
-
-    .mobile {
-      display: none !important;
-    }
-
-    .column1-2__left {
-      margin: 0 -25px 0px 25px !important;
-      padding: 60px 100px 60px 60px !important;
-      order: 0;
-    }
-
-    .column1-2__right {
-      padding: 0 !important;
-      margin: -25px 25px 25px 0 !important;
-    }
-
-    .column3-4_left--image {
-      padding: 0 !important;
-      margin: 0 -25px 0 25px !important;
-      z-index: 5;
-    }
-
-    .column3-4_right--text {
-      padding: 60px 100px 60px 85px !important;
-      margin: -25px 0 0 !important;
-    }
-
-    .column3-4_left--text {
-      padding: 50px 50px 50px 50px !important;
-      margin: 0 !important;
-      order: 0;
-    }
-
-    .column3-4_right--image {
-      padding: 0 !important;
-      margin: 0 25px 0 -25px !important;
-      z-index: 5;
-    }
-
-    .column__right--text, .column__left--text {
-      padding: 60px 100px 60px 60px !important;
-    }
-
-    .heroes__container {
-      display: flex;
-      flex-wrap: wrap;
-      min-width: 100% !important;
-    }
+  .column1-2__left {
+    margin: 0 -25px 0px 25px !important;
+    padding: 60px 100px 60px 60px !important;
+    order: 0;
   }
 
-  /* .columns {
+  .column1-2__right {
+    padding: 0 !important;
+    margin: -25px 25px 25px 0 !important;
+  }
+
+  .column3-4_left--image {
+    padding: 0 !important;
+    margin: 0 -25px 0 25px !important;
+    z-index: 5;
+  }
+
+  .column3-4_right--text {
+    padding: 60px 100px 60px 85px !important;
+    margin: -25px 0 0 !important;
+  }
+
+  .column3-4_left--text {
+    padding: 50px 50px 50px 50px !important;
+    margin: 0 !important;
+    order: 0;
+  }
+
+  .column3-4_right--image {
+    padding: 0 !important;
+    margin: 0 25px 0 -25px !important;
+    z-index: 5;
+  }
+
+  .column__right--text, .column__left--text {
+    padding: 60px 100px 60px 60px !important;
+  }
+
+  .heroes__container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100% !important;
+  }
+}
+
+/* .columns {
       display: none !IMPORTANT;
   } */
-
-  @media (max-width: 375px) {
+@media (max-width: 375px) {
   .home-instagram-image h3 {
-      color: white;
-      font-style: normal;
-      bottom: 0;
-      left: 10px;
-      position: absolute;
-      font-weight: 500;
-      text-decoration: none !important;
-      font-size: 1.8rem !important;
-      letter-spacing: -0.9px;
-      text-align: left;
+    color: white;
+    font-style: normal;
+    bottom: 0;
+    left: 10px;
+    position: absolute;
+    font-weight: 500;
+    text-decoration: none !important;
+    font-size: 1.8rem !important;
+    letter-spacing: -0.9px;
+    text-align: left;
   }
-  }
+}
 
-  @media (max-width: 375px) {
+@media (max-width: 375px) {
   .home-instagram-image p {
-      color: white;
-      left: 10px;
-      position: absolute;
-      text-decoration: none !important;
-      font-size: 1.2rem !important;
-      letter-spacing: -0.9px;
-      text-align: left;
-      top: 10px;
-      font-style: normal;
+    color: white;
+    left: 10px;
+    position: absolute;
+    text-decoration: none !important;
+    font-size: 1.2rem !important;
+    letter-spacing: -0.9px;
+    text-align: left;
+    top: 10px;
+    font-style: normal;
   }
-  }
+}
 
-  .home-instagram-image p {
+.home-instagram-image p {
   color: white;
-      left: 10px;
-      position: absolute;
-      text-decoration: none !important;
-      font-size: 1.5rem !important;
-      letter-spacing: -0.9px;
-      text-align: left;
-      top: 10px;
-      font-style: normal;
-  }
-
+  left: 10px;
+  position: absolute;
+  text-decoration: none !important;
+  font-size: 1.5rem !important;
+  letter-spacing: -0.9px;
+  text-align: left;
+  top: 10px;
+  font-style: normal;
+}
 
 @media screen and (max-width: 414px) {
   .bf-home.grid-row .pagebuilder-column-group {
@@ -581,12 +583,12 @@ h2 {
     display: flex !important;
   }
 
-  .bf-home.slider .pagebuilder-column-group{
+  .bf-home.slider .pagebuilder-column-group {
     width: 240vw !important;
     overflow: auto !important;
-flex-wrap: nowrap !important;
-cursor: grab;
-display: flex !important;
+    flex-wrap: nowrap !important;
+    cursor: grab;
+    display: flex !important;
   }
 
   .bf-home.slider .pagebuilder-column {
@@ -606,39 +608,43 @@ display: flex !important;
   }
 
   .vimeo-wrapper {
-     position: relative;
-     top: 0;
-     left: 0;
-     width: 100vw;
-     height: 125vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-     max-height: 517.5px;
-     max-width: 414px; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-     pointer-events: all !important;
-     cursor: pointer !important;
-     overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 125vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    max-height: 517.5px;
+    max-width: 414px;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    pointer-events: all !important;
+    cursor: pointer !important;
+    overflow: hidden;
   }
 
   .vimeo-wrapper .clickable {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100vw;
-     height: 125vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-     max-height: 517.5px;
-     max-width: 414px; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-     pointer-events: all;
-     overflow: hidden;
-     display: flex;
-     align-items: center;
-     text-decoration: none !important;
-     z-index: 10000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 125vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    max-height: 517.5px;
+    max-width: 414px;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    pointer-events: all;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    z-index: 10000;
   }
 
   .vimeo-wrapper .clickable a {
-     width: 100%;
-     height: 100%;
-     padding: 0 !important;
-     margin: 0 !important;
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .vimeo-wrapper iframe.desktop {
@@ -649,41 +655,41 @@ display: flex !important;
     display: block;
   }
 
- .bf_countdown--back {
- height: 50vw;
- width: 100vw;
- position: relative;
- max-width: 414px !important;
- max-height: 207px !important;
-}
+  .bf_countdown--back {
+    height: 50vw;
+    width: 100vw;
+    position: relative;
+    max-width: 414px !important;
+    max-height: 207px !important;
+  }
 }
 
 @media screen and (max-width: 1080px) {
- #bf__countdown {
- font-family: 'Source Code Pro', monospace !important;
- mix-blend-mode: difference;
- margin: 0 !important;
- color: white !important;
-font-size: 2.5rem
-}
+  #bf__countdown {
+    font-family: 'Source Code Pro', monospace !important;
+    mix-blend-mode: difference;
+    margin: 0 !important;
+    color: white !important;
+    font-size: 2.5rem
+  }
 }
 
 @media screen and (max-width: 414px) {
- #bf__countdown {
- font-family: 'Source Code Pro', monospace !important;
- mix-blend-mode: difference;
- margin: 0 !important;
- color: white !important;
-font-size: 1.8rem;
-padding-top: 10px !important;
-}
+  #bf__countdown {
+    font-family: 'Source Code Pro', monospace !important;
+    mix-blend-mode: difference;
+    margin: 0 !important;
+    color: white !important;
+    font-size: 1.8rem;
+    padding-top: 10px !important;
+  }
 
- .bf_countdown--back {
- height: 24vw;
- width: 100vw;
- position: relative;
- min-width: 100vw !important;
- max-height: 99.36px !important;
- background-color: #000000 !important;
-}
+  .bf_countdown--back {
+    height: 24vw;
+    width: 100vw;
+    position: relative;
+    min-width: 100vw !important;
+    max-height: 99.36px !important;
+    background-color: #000000 !important;
+  }
 }
