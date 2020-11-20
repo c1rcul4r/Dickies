@@ -205,7 +205,7 @@ h2 {
 
 h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   font-style: normal;
   letter-spacing: -0.9px;
   margin-bottom: 0 !important;
@@ -288,13 +288,13 @@ h2 {
 
 .text__body {
   font-size: 22px;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 @media (min-width: 1024px), print {
   h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     font-style: normal;
     letter-spacing: -0.9px;
     margin-bottom: 0 !important;
@@ -304,6 +304,16 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal;
+    letter-spacing: -0.9px;
+    margin-bottom: 0 !important;
+    font-size: 4.5rem;
+    line-height: 110%;
+  }
+
   h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 500 !important;
@@ -317,7 +327,7 @@ h2 {
 
   .text__body {
     font-size: 24px;
-    line-height: 26px;
+    line-height: 30px;
   }
 
   .hp__column {
