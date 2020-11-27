@@ -1,2 +1,2 @@
 # Dickies
-YTM Landing Page
+dickieslife.com
