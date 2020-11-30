@@ -9,6 +9,8 @@
 
 /* Typography */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 .cms-index-index .page-main h1 {}
 
 .cms-index-index .page-main h2 {}
@@ -33,13 +35,25 @@
 
 }
 
-/* New In Section */
+/* Discover Our Icons Section */
+
+@media only screen and (min-width:768px) {
+
+}
+
+/* Special Collections Section */
 
 @media only screen and (min-width:768px) {
 
 }
 
 /* Proudcts Section */
+
+@media only screen and (min-width:768px) {
+
+}
+
+/* MTM Section */
 
 @media only screen and (min-width:768px) {
 
