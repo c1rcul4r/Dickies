@@ -1,21 +1,20 @@
-<style>
 /* © CIRCULAR AGENCY */
 /* General */
 
-.product-items {
+[data-element="main"] .product-items {
   border: 0 none !important;
 }
 
-.slick-slide {
+[data-element="main"] .slick-slide {
   border: 0 none !important;
 }
 
-.page-main {
+/* [data-element="main"] {
   max-width: none !important;
   padding: 0 !important;
-}
+} */
 
-.mobile {
+[data-element="main"] .mobile {
   display: block !important;
 }
 
@@ -23,15 +22,20 @@
   padding: 5vw 10vw !important;
 }
 
+.home.heading span{
+  font-size: 1.7rem !important;
+  line-height: 1.4 !important;
+}
+
 /* Product Slider */
 
-.block.widget .product-items .product-item {
+[data-element="main"] .block.widget .product-items .product-item {
   border-color: transparent !important;
   border-style: solid !important;
   border-width: 0 0 0 0 !important;
 }
 
-.block.widget .product-items .product-item:before {
+[data-element="main"] .block.widget .product-items .product-item:before {
   background: none !important;
   content: '';
   height: 1px;
@@ -41,7 +45,7 @@
   width: 100%
 }
 
-.block.widget .product-items .product-item:after {
+[data-element="main"] .block.widget .product-items .product-item:after {
   background: none !important;
   content: '';
   height: 100%;
@@ -51,18 +55,28 @@
   width: 1px
 }
 
-.block.widget .product-items .slick-track .slick-slide {
+[data-element="main"] .block.widget .product-items .slick-track .slick-slide {
   border-left: 0 solid transparent;
 }
 /* */
 
 @media only screen and (min-width:768px) {
-  .mobile {
+  [data-element="main"] .mobile {
     display: none !important;
   }
 
   .home.heading {
     padding: 2.5vw !important;
+  }
+
+  .home.heading [data-content-type="text"] p{
+    width: 30% !important;
+    margin: 0 auto !important;
+  }
+
+  .home.heading span{
+    font-size: 2rem !important;
+    line-height: 1.4 !important;
   }
 }
 
@@ -70,9 +84,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-.cms-index-index .page-main h1 {}
+.cms-index-index [data-element="main"] h1 {}
 
-h2 {
+[data-element="main"] h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 700 !important;
   font-style: normal;
@@ -80,10 +94,10 @@ h2 {
   line-height: 1 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  font-size: 3.5rem !important;
+  font-size: 3rem !important;
 }
 
-h3 {
+[data-element="main"] h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 700 !important;
   font-style: normal;
@@ -92,7 +106,7 @@ h3 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   text-align: center !important;
-  font-size: 3.5rem !important;
+  font-size: 2.5rem !important;
 }
 
 .home.our-story .pagebuilder-column h3 {
@@ -105,10 +119,10 @@ h3 {
   margin-bottom: 0 !important;
   text-align: left !important;
   color: #FFFFFF !important;
-  font-size: 3.5rem !important;
+  font-size: 2.5rem !important;
 }
 
-h5 {
+[data-element="main"] h5 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 700 !important;
   font-style: normal;
@@ -121,12 +135,12 @@ h5 {
   font-size: 2.5rem !important;
 }
 
-.cms-index-index .page-main h3 {}
+.cms-index-index [data-element="main"] h3 {}
 
-.cms-index-index .page-main p, .cms-index-index .page-main span {}
+.cms-index-index [data-element="main"] p, .cms-index-index [data-element="main"] span {}
 
 @media only screen and (min-width:768px) {
-  h2 {
+  [data-element="main"] h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 700 !important;
     font-style: normal;
@@ -137,7 +151,7 @@ h5 {
     font-size: 4.5rem !important;
   }
 
-  h3 {
+  [data-element="main"] h3 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 700 !important;
     font-style: normal;
@@ -162,7 +176,7 @@ h5 {
     font-size: 3.5rem !important;
   }
 
-  h5 {
+  [data-element="main"] h5 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: 700 !important;
     font-style: normal;
@@ -217,6 +231,11 @@ h5 {
   padding: 0.5vw !important;
 }
 
+.home.top-banner h5{
+  width: 90% !important;
+  margin: 0 auto !important;
+}
+
 @media only screen and (min-width:768px) {
   .home.top-banner {
     height: 50vw !important;
@@ -257,7 +276,6 @@ h5 {
 }
 
 .home.discover-icons .pagebuilder-button-primary {
-  border: 0 !important;
   border-radius: 30px !important;
 }
 
@@ -335,9 +353,9 @@ h5 {
 .home.grid-row-2.two-col .pagebuilder-column [data-content-type="text"],
 .home.grid-row-2.one-col .pagebuilder-column [data-content-type="text"] {
   position: relative;
-  width: 100%;
+  width: calc(100% - 4vw) !important;
   height: auto;
-  padding: 0.5vw !important;
+  padding: 2vw !important;
   display: flex;
   top: 0;
   left: 0;
@@ -345,6 +363,7 @@ h5 {
   justify-content: center;
   text-align: center !important;
   opacity: 1;
+  pointer-events: none;
 }
 
 @media only screen and (min-width:768px) {
@@ -384,7 +403,8 @@ h5 {
 
   .home.grid-row-2.one-col .pagebuilder-column [data-content-type="text"] span,
   .home.grid-row-2.two-col .pagebuilder-column [data-content-type="text"] span {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
+    line-height: 1.4 !important;
   }
 
   .home.grid-row-2.two-col .pagebuilder-column figure,
@@ -398,9 +418,9 @@ h5 {
   .home.grid-row-2.two-col .pagebuilder-column [data-content-type="text"],
   .home.grid-row-2.one-col .pagebuilder-column [data-content-type="text"] {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 0.5vw !important;
+    width: calc(100% - 4vw) !important;
+    height: calc(100% - 4vw) !important;
+    padding: 2vw !important;
     display: flex;
     top: 0;
     left: 0;
@@ -410,6 +430,7 @@ h5 {
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
   }
 }
 
@@ -469,7 +490,7 @@ h5 {
 /* Journal Section */
 
 .home.journal {
-  padding: 5vw !important;
+  padding: 12.5vw !important;
   margin: 0 !important;
   flex-direction: column !important;
 }
@@ -496,6 +517,16 @@ h5 {
   padding-bottom: 100%;
 }
 
+.home.journal h3 {
+  margin-bottom: 4vw !important;
+}
+
+.home.journal p {
+  font-size: 1.3rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 1vw !important;
+}
+
 @media only screen and (min-width:768px) {
   .home.journal {
     justify-content: center !important;
@@ -508,7 +539,7 @@ h5 {
   .home.journal .pagebuilder-column-group{
     width: calc(50% - 5vw) !important;
     flex-direction: column !important;
-    padding: 2.5vw !important;
+    padding: 2.5vw 2.5vw 0 !important;
   }
 
   .home.journal .pagebuilder-column {
@@ -519,12 +550,26 @@ h5 {
     width: 100%;
     min-height: unset !important;
     position: relative;
+    margin-bottom: 1.5vw !important;
   }
 
   .home.journal.image::before {
     content: "";
     display: block;
     padding-bottom: 100%;
+  }
+
+  .home.journal h3 {
+    width: 65% !important;
+    margin: 0 auto !important;
+    margin-bottom: 1vw !important;
+  }
+
+  .home.journal p {
+    font-size: 1.6rem !important;
+    width: 50% !important;
+    margin: 0 auto !important;
+    line-height: 1.4 !important;
   }
 }
 
@@ -543,13 +588,18 @@ h5 {
   justify-content: center !important;
 }
 
+.home.our-story .pagebuilder-column p {
+  font-size: 1.3rem !important;
+  line-height: 1.4 !important;
+}
+
 .home.our-story .pagebuilder-column h3 {
   margin-bottom: 2vh !important;
 }
 
 @media only screen and (min-width:768px) {
   .home.our-story .pagebuilder-column-group {
-    height: 50vh !important;
+    height: auto !important;
   }
 
   .home.our-story .pagebuilder-column {
@@ -561,9 +611,12 @@ h5 {
     margin-bottom: 2vh !important;
   }
 
+  .home.our-story .pagebuilder-column p {
+    font-size: 1.6rem !important;
+    line-height: 1.4 !important;
+  }
+
   .home.our-story.image {
     display: block !important;
   }
 }
-
-</style>
