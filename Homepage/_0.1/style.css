@@ -10,6 +10,19 @@
   border: 0 none !important;
 }
 
+.page-main {
+  max-width: none !important;
+  padding: 0 !important;
+}
+
+.mobile {
+  display: block !important;
+}
+
+.home.heading {
+  padding: 5vw 10vw !important;
+}
+
 /* Product Slider */
 
 .block.widget .product-items .product-item {
@@ -44,6 +57,13 @@
 /* */
 
 @media only screen and (min-width:768px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .home.heading {
+    padding: 2.5vw !important;
+  }
 }
 
 /* Typography */
@@ -165,17 +185,32 @@ h5 {
 /* Top Banner */
 
 .home.top-banner {
-  height: 50vh !important;
+  height: 125vw !important;
+  min-height: unset !important;
   margin: 0 0 5vh !important;
   padding: 0 !important;
   position: relative;
   justify-content: center !important;
 }
 
+.home.top-banner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  backdrop-filter: brightness(0.7);
+}
+
+.home.top-banner>* {
+  z-index: 10;
+}
+
 .home.top-banner .pagebuilder-column-group:last-child{
   width: 100%;
   position: absolute;
-  bottom: 2vh;
+  bottom: 4vw;
 }
 
 .home.top-banner .pagebuilder-column-group:last-child [data-content-type="buttons"] {
@@ -184,7 +219,7 @@ h5 {
 
 @media only screen and (min-width:768px) {
   .home.top-banner {
-    height: 50vh !important;
+    height: 50vw !important;
     margin: 0 0 5vh !important;
     padding: 0 !important;
     position: relative;
@@ -194,7 +229,7 @@ h5 {
   .home.top-banner .pagebuilder-column-group:last-child{
     width: 100%;
     position: absolute;
-    bottom: 2vh;
+    bottom: 4vw;
   }
 
   .home.top-banner .pagebuilder-column-group:last-child .pagebuilder-column {
@@ -221,6 +256,16 @@ h5 {
   margin-bottom: 1vh !important;
 }
 
+.home.discover-icons .pagebuilder-button-primary {
+  border: 0 !important;
+  border-radius: 30px !important;
+}
+
+.home.discover-icons .pagebuilder-button-primary span {
+  font-size: 1.4rem;
+  font-weight: 400 !important;
+}
+
 @media only screen and (min-width:768px) {
   .home.discover-icons {
 
@@ -240,15 +285,15 @@ h5 {
 
 .home.grid-row-2.two-col,
 .home.grid-row-2.one-col {
-  padding: 0 !important;
+  padding: 2.5vw !important;
 }
 
 .home.grid-row-2.two-col.first {
-  padding: 10vh 0 0 0 !important;
+  padding: 3vw 0 0 0 !important;
 }
 
 .home.grid-row-2.two-col.last {
-  padding: 0 0 10vh 0 !important;
+  padding: 0 0 3vw 0 !important;
 }
 
 .home.grid-row-2.two-col .pagebuilder-column-group {
@@ -284,7 +329,7 @@ h5 {
   position: relative;
   height: 0;
   display: block;
-  padding-bottom: 100% !important;
+  padding-bottom: 56.25% !important;
 }
 
 .home.grid-row-2.two-col .pagebuilder-column [data-content-type="text"],
@@ -305,7 +350,7 @@ h5 {
 @media only screen and (min-width:768px) {
   .home.grid-row-2.two-col,
   .home.grid-row-2.one-col {
-    padding: 10vh 0 !important;
+    padding: 2.5vw 0 !important;
   }
 
   .home.grid-row-2.two-col .pagebuilder-column-group {
@@ -337,6 +382,11 @@ h5 {
     opacity: 1;
   }
 
+  .home.grid-row-2.one-col .pagebuilder-column [data-content-type="text"] span,
+  .home.grid-row-2.two-col .pagebuilder-column [data-content-type="text"] span {
+    font-size: 3.5rem !important;
+  }
+
   .home.grid-row-2.two-col .pagebuilder-column figure,
   .home.grid-row-2.one-col .pagebuilder-column figure {
     position: relative;
@@ -366,14 +416,15 @@ h5 {
 /* Proudcts Section */
 
 .home.section-banner {
-  height: 50vh !important;
+  height: 56.25vw !important;
+  min-height: unset !important;
   padding: 0 0 10vh !important;
   margin: 0 !important
 }
 
 @media only screen and (min-width:768px) {
   .home.section-banner {
-    height: 50vh !important;
+    height: 50vw !important;
     padding: 0 0 10vh !important;
     margin: 0 !important
   }
@@ -447,13 +498,15 @@ h5 {
 
 @media only screen and (min-width:768px) {
   .home.journal {
+    justify-content: center !important;
     padding: 5vw !important;
     margin: 0 !important;
     flex-direction: row !important;
+    flex-wrap: wrap !important;
   }
 
   .home.journal .pagebuilder-column-group{
-    width: 50% !important;
+    width: calc(50% - 5vw) !important;
     flex-direction: column !important;
     padding: 2.5vw !important;
   }
@@ -481,12 +534,12 @@ h5 {
   height: auto !important;
 }
 
-.home.our-story .pagebuilder-column-group .pagebuilder-column:last-child {
+.home.our-story.image {
   display: none !important;
 }
 
 .home.our-story .pagebuilder-column {
-  padding: 4% 15% 4% 4% !important;
+  padding: 10vw !important;
   justify-content: center !important;
 }
 
@@ -506,6 +559,10 @@ h5 {
 
   .home.our-story .pagebuilder-column h3 {
     margin-bottom: 2vh !important;
+  }
+
+  .home.our-story.image {
+    display: block !important;
   }
 }
 
