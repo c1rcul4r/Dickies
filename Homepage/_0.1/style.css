@@ -275,7 +275,9 @@
   margin-bottom: 1vh !important;
 }
 
-.home.discover-icons .pagebuilder-button-primary {
+.home.discover-icons .pagebuilder-button-primary,
+.home.discover-icons .pagebuilder-button-primary::before
+ {
   border-radius: 30px !important;
 }
 
