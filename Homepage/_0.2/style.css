@@ -22,7 +22,7 @@
 }
 
 .home.heading {
-  padding: 5vw 10vw !important;
+  padding: 10vw 10vw 5vw !important;
 }
 
 .home.heading span{
@@ -61,6 +61,11 @@
 [data-element="main"] .block.widget .product-items .slick-track .slick-slide {
   border-left: 0 solid transparent;
 }
+
+.slick-prev:before, .slick-next:before, .slick-prev:after, .slick-next:after {
+  font-size: 20px !important;
+  -webkit-text-stroke: 2px !important;
+}
 /* */
 
 @media only screen and (min-width:768px) {
@@ -69,7 +74,7 @@
   }
 
   .home.heading {
-    padding: 2.5vw !important;
+    padding: 2vw !important;
   }
 
   .home.heading [data-content-type="text"] p{
@@ -112,6 +117,10 @@
   font-size: 2.5rem !important;
 }
 
+.home.top-banner h3 {
+  color: #FFFFFF !important;
+}
+
 .home.our-story .pagebuilder-column h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 700 !important;
@@ -134,7 +143,6 @@
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   text-align: center !important;
-  color: #FFFFFF !important;
   font-size: 2.5rem !important;
 }
 
@@ -188,7 +196,6 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     text-align: center !important;
-    color: #FFFFFF !important;
     font-size: 2.5rem !important;
   }
 }
@@ -274,14 +281,8 @@
   flex-wrap: wrap !important;
 }
 
-.home.discover-icons h3 {
+.home.discover-icons h5 {
   margin-bottom: 1vh !important;
-}
-
-.home.discover-icons .pagebuilder-button-primary,
-.home.discover-icons .pagebuilder-button-primary::before
- {
-  border-radius: 30px !important;
 }
 
 .home.discover-icons .pagebuilder-button-primary span {
@@ -299,38 +300,62 @@
     justify-content: center !important;
   }
 
-  .home.discover-icons h3 {
+  .home.discover-icons h5 {
     margin-bottom: 1vh !important;
   }
 }
 
 /* Special Collections Section */
 
-.home.grid-row-2.two-col,
-.home.grid-row-2.one-col {
+.home.special-collections.slider {
+  display: flex !important;
+  padding: 5vw !important;
+}
+
+.home.special-collections.slider .pagebuilder-slider {
+  min-height: unset !important;
+}
+
+.home.special-collections.slider .pagebuilder-slider [data-content-type=slide] {
+  position: relative !important;
+  padding-bottom: 10vw !important;
+}
+
+.home.special-collections.slider .pagebuilder-slider .pagebuilder-slide-wrapper {
+  min-height: unset !important;
+  height: 0 !important;
+  padding-top: 100% !important;
+}
+
+.home.special-collections.slider .pagebuilder-slider .pagebuilder-slide-wrapper .pagebuilder-poster-overlay {
+  position: absolute !important;
+  min-height: unset !important;
+  bottom: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.home.special-collections.slider .pagebuilder-slider .pagebuilder-slide-wrapper .pagebuilder-poster-overlay [data-element=content] {
+  min-height: unset !important;
+}
+
+.home.special-collections.grid {
   padding: 2.5vw !important;
+  display: none !important;
 }
 
-.home.grid-row-2.two-col.first {
-  padding: 3vw 0 0 0 !important;
+.home.special-collections.grid .hidden{
+  padding: 0 !important;
+  margin: 0 !important;
+  display: none !important;
 }
 
-.home.grid-row-2.two-col.last {
-  padding: 0 0 3vw 0 !important;
-}
-
-.home.grid-row-2.two-col .pagebuilder-column-group {
+.home.special-collections.grid .pagebuilder-column-group {
   display: flex !important;
   padding: 0 !important;
 }
 
-.home.grid-row-2.one-col .pagebuilder-column-group {
-  display: flex !important;
-  justify-content: center !important;
-  padding: 0 5vw !important;
-}
-
-.home.grid-row-2.two-col .pagebuilder-column {
+.home.special-collections.grid .pagebuilder-column {
   position: relative;
   padding: 0.5vw !important;
   width: 100% !important;
@@ -342,21 +367,18 @@
   width: 50% !important;
 }
 
-.home.grid-row-2.one-col .pagebuilder-column:hover [data-content-type="text"],
-.home.grid-row-2.two-col .pagebuilder-column:hover [data-content-type="text"] {
+.home.special-collections.grid .pagebuilder-column:hover [data-content-type="text"] {
   opacity: 1;
 }
 
-.home.grid-row-2.two-col .pagebuilder-column figure,
-.home.grid-row-2.one-col .pagebuilder-column figure {
+.home.special-collections.grid .pagebuilder-column figure {
   position: relative;
   height: 0;
   display: block;
   padding-bottom: 56.25% !important;
 }
 
-.home.grid-row-2.two-col .pagebuilder-column [data-content-type="text"],
-.home.grid-row-2.one-col .pagebuilder-column [data-content-type="text"] {
+.home.special-collections.grid .pagebuilder-column [data-content-type="text"] {
   position: relative;
   width: calc(100% - 4vw) !important;
   height: auto;
@@ -372,56 +394,50 @@
 }
 
 @media only screen and (min-width:768px) {
-  .home.grid-row-2.two-col,
-  .home.grid-row-2.one-col {
+  .home.special-collections.slider {
+    display: none !important;
+  }
+
+  .home.special-collections.grid {
     padding: 2.5vw 0 !important;
+    display: flex !important;
   }
 
-  .home.grid-row-2.two-col .pagebuilder-column-group {
+  .home.special-collections.grid .pagebuilder-column-group {
     display: flex !important;
     justify-content: center !important;
     padding: 0 !important;
   }
 
-  .home.grid-row-2.one-col .pagebuilder-column-group {
-    display: flex !important;
-    justify-content: center !important;
-    padding: 0 !important;
-  }
-
-  .home.grid-row-2.two-col .pagebuilder-column {
+  .home.special-collections.grid .pagebuilder-column {
     position: relative;
     padding: 0.5vw !important;
     width: 33vw !important;
   }
 
-  .home.grid-row-2.one-col .pagebuilder-column {
+  .home.special-collections.grid .pagebuilder-column {
     position: relative;
     padding: 0.5vw !important;
     width: 33vw !important;
   }
 
-  .home.grid-row-2.one-col .pagebuilder-column:hover [data-content-type="text"],
-  .home.grid-row-2.two-col .pagebuilder-column:hover [data-content-type="text"] {
+  .home.special-collections.grid .pagebuilder-column:hover [data-content-type="text"] {
     opacity: 1;
   }
 
-  .home.grid-row-2.one-col .pagebuilder-column [data-content-type="text"] span,
-  .home.grid-row-2.two-col .pagebuilder-column [data-content-type="text"] span {
+  .home.special-collections.grid .pagebuilder-column [data-content-type="text"] span {
     font-size: 3rem !important;
     line-height: 1.4 !important;
   }
 
-  .home.grid-row-2.two-col .pagebuilder-column figure,
-  .home.grid-row-2.one-col .pagebuilder-column figure {
+  .home.special-collections.grid .pagebuilder-column figure {
     position: relative;
     height: 0;
     display: block;
     padding-bottom: 100% !important;
   }
 
-  .home.grid-row-2.two-col .pagebuilder-column [data-content-type="text"],
-  .home.grid-row-2.one-col .pagebuilder-column [data-content-type="text"] {
+  .home.special-collections.grid .pagebuilder-column [data-content-type="text"] {
     position: absolute;
     width: calc(100% - 4vw) !important;
     height: calc(100% - 4vw) !important;
@@ -441,18 +457,30 @@
 
 /* Proudcts Section */
 
-.home.section-banner {
+.home.section-banner.mobile {
   height: 56.25vw !important;
   min-height: unset !important;
-  padding: 0 0 10vh !important;
-  margin: 0 !important
+  padding: 0 !important;
+  margin: 0 !important;
+  justify-content: flex-end !important;
+  display: flex !important;
+}
+
+.home.section-banner.desktop {
+  display: none !important;
 }
 
 @media only screen and (min-width:768px) {
-  .home.section-banner {
-    height: 50vw !important;
-    padding: 0 0 10vh !important;
-    margin: 0 !important
+  .home.section-banner.mobile {
+    display: none !important;
+  }
+
+  .home.section-banner.desktop {
+    height: 25vw !important;
+    padding: 0 !important;
+    margin: 0 0 2.5vw !important;
+    justify-content: flex-end !important;
+    display: flex !important;
   }
 }
 
@@ -490,14 +518,23 @@
     margin-top: 1.725rem !important;
     margin-bottom: 1.15rem !important;
   }
+
+  .home.mtm {
+    margin: 0 0 2vw !important;
+  }
 }
 
 /* Journal Section */
 
 .home.journal {
-  padding: 12.5vw !important;
+  padding: 0 12.5vw 12.5vw !important;
   margin: 0 !important;
   flex-direction: column !important;
+}
+
+.home.journal hr{
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
 }
 
 .home.journal .pagebuilder-column-group{
@@ -535,7 +572,7 @@
 @media only screen and (min-width:768px) {
   .home.journal {
     justify-content: center !important;
-    padding: 5vw !important;
+    padding: 0 5vw 5vw !important;
     margin: 0 !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
@@ -544,7 +581,7 @@
   .home.journal .pagebuilder-column-group{
     width: calc(50% - 5vw) !important;
     flex-direction: column !important;
-    padding: 2.5vw 2.5vw 0 !important;
+    padding: 0 2.5vw !important;
   }
 
   .home.journal .pagebuilder-column {
@@ -565,9 +602,10 @@
   }
 
   .home.journal h3 {
-    width: 65% !important;
+    width: 100% !important;
     margin: 0 auto !important;
     margin-bottom: 1vw !important;
+    margin-top: 0.25vw !important;
   }
 
   .home.journal p {
