@@ -278,12 +278,6 @@
   margin-bottom: 1vh !important;
 }
 
-.home.discover-icons .pagebuilder-button-primary,
-.home.discover-icons .pagebuilder-button-primary::before
- {
-  border-radius: 30px !important;
-}
-
 .home.discover-icons .pagebuilder-button-primary span {
   font-size: 1.4rem;
   font-weight: 400 !important;
