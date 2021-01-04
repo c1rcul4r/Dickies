@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="https://raw.githack.com/c1rcul4r/Dickies/master/UBD LP/style.css">
-<script src="https://raw.githack.com/c1rcul4r/Dickies/master/UBD LP/app.js"></script>
+<link rel="stylesheet" href="https://rawcdn.githack.com/c1rcul4r/Dickies/e35b96b1b227342fedabcfb76cdcf5cb37814be8/UBD/mtm-grid.css">
+<script src="https://rawcdn.githack.com/c1rcul4r/Dickies/e35b96b1b227342fedabcfb76cdcf5cb37814be8/UBD/app.js"></script>
 <style>
 /* © CIRCULAR AGENCY */
 /* General */
@@ -137,7 +137,7 @@
   letter-spacing: 0px;
   line-height: 1 !important;
   margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-bottom: calc(15px + (20 - 15) * ((100vw - 360px) / (1440 - 360))) !important;
   /* font-size: 3rem !important; */
   font-size: calc(30px + (45 - 30) * ((100vw - 360px) / (1440 - 360))) !important;
 }
@@ -179,7 +179,7 @@
   letter-spacing: 0px;
   line-height: 1 !important;
   margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 2.5vw !important;
   text-align: center !important;
   font-size: 2.5rem !important;
 }
@@ -196,7 +196,7 @@
     letter-spacing: 0px;
     line-height: 1 !important;
     margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    /* margin-bottom: 0 !important; */
     /* font-size: 4.5rem !important; */
   }
 
@@ -232,7 +232,7 @@
     letter-spacing: 0px;
     line-height: 1 !important;
     margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 1vw !important;
     text-align: center !important;
     font-size: 2.5rem !important;
   }
@@ -318,10 +318,90 @@
   }
 }
 
+/* Top Banner VIMEO */
+
+.home.vimeo-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  max-height: 810px;
+  /* max-width: 1440px; */
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  pointer-events: all;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.home.vimeo-wrapper [data-content-type="html"] {
+  width: 100%;
+  height: 100%;
+}
+
+.home.vimeo-wrapper iframe.desktop {
+  display: block;
+  width: 100%;
+  height: 56.25vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  /* max-height: 810px;
+  max-width: 1440px; */
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+
+.home.vimeo-wrapper iframe.mobile {
+  display: none;
+  width: 100vw;
+  height: 125vw;
+  /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  max-height: 517.5px;
+  max-width: 414px;
+  /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+
+@media only screen and (max-width:414px) {
+
+  .home.vimeo-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 125vw;
+    /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    max-height: 517.5px;
+    max-width: 414px;
+    /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    pointer-events: all !important;
+    cursor: pointer !important;
+    overflow: hidden;
+  }
+
+.home.vimeo-wrapper iframe.desktop {
+  display: none;
+}
+
+.home.vimeo-wrapper iframe.mobile {
+  display: block;
+}
+}
+
 /* Discover Our Icons Section */
 
 .home.discover-icons {
-
+  padding: 10vw 0 15vw !important;
 }
 
 .home.discover-icons .pagebuilder-column {
@@ -340,7 +420,7 @@
 
 @media only screen and (min-width:768px) {
   .home.discover-icons {
-
+    padding: 2.5vw 0 2.5vw !important;
   }
 
   .home.discover-icons .pagebuilder-column {
@@ -388,8 +468,8 @@
 }
 
 .home.special-collections.grid {
-  padding: 2.5vw !important;
-  display: none !important;
+  padding: 7.5vw 2.5vw 10vw !important;
+  /* display: none !important; */
 }
 
 .home.special-collections.grid .hidden{
@@ -448,7 +528,7 @@
   }
 
   .home.special-collections.grid {
-    padding: 2.5vw 0 !important;
+    padding: 1.5vw 0 3.5vw !important;
     display: flex !important;
   }
 
@@ -522,12 +602,12 @@
 
 /* Proudcts Section */
 
-.home.section-banner.mobile {
+.home.section-banner {
   height: 56.25vw !important;
   min-height: unset !important;
   padding: 0 !important;
   margin: 0 !important;
-  justify-content: flex-end !important;
+  justify-content: center !important;
   display: flex !important;
 }
 
@@ -538,21 +618,16 @@
   display: flex !important;
 }
 
-.home.section-banner.desktop {
-  display: none !important;
-}
-
 @media only screen and (min-width:768px) {
-  .home.section-banner.desktop {
-    height: 25vw !important;
+  .home.section-banner {
+    height: 40vw !important;
     min-height: unset !important;
     padding: 0 !important;
     margin: 0 0 2.5vw !important;
-    justify-content: flex-end !important;
+    justify-content: center !important;
     display: flex !important;
   }
 
-  .home.section-banner.mobile,
   .home.section-banner.buttons.mobile {
     display: none !important;
   }
@@ -568,12 +643,25 @@
   position: absolute;
   font-weight: 500 !important;
   text-decoration: none !important;
-  font-size: 2.5rem !important;
+  font-size: calc(20px + (25 - 20) * ((100vw - 360px) / (1440 - 360))) !important;
   letter-spacing: -0.9px;
   text-align: left !important;
   line-height: 1.125 !important;
   margin-top: 1.725rem !important;
   margin-bottom: 1.15rem !important;
+}
+
+.home.mtm [data-element=inner] {
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.home.mtm .heroes__popup {
+  width: 80% !important;
+}
+
+.home.mtm .heroes__image {
+  filter: grayscale(0%) !important;
 }
 
 @media only screen and (min-width:768px) {
@@ -594,7 +682,15 @@
   }
 
   .home.mtm {
-    margin: 0 0 2vw !important;
+    margin: 0 !important;
+  }
+
+  .home.mtm .heroes__popup {
+    width: 60% !important;
+  }
+
+  .home.mtm .heroes__image {
+    filter: grayscale(100%) !important;
   }
 }
 
@@ -782,3 +878,4 @@
     display: block !important;
   }
 }
+</style>
