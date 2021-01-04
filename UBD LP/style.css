@@ -2,21 +2,6 @@
 
 
 
-.newsletter__container {
-    padding: 25px 25px !important;
-  }
-
-.block.newsletter.banner__v4 .form.subscribe {
-padding: 0 !important;
-}
-
-@media (min-width: 768px) {
-  .newsletter__container {
-    padding: 10px 120px !important;
-  }
-}
-
-
 .h1
 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -29,7 +14,7 @@ padding: 0 !important;
 
 .title__banner h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: 700 !important;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: -0.9px;
   margin-bottom: 0 !important;
@@ -401,82 +386,11 @@ h1 {
 }
 }
 
-h6, h6 span, h6 a 
+.h6
   {
-  font-family: font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: 500;
+  font-family: league-gothic, sans-serif !important;
+  font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
   margin-bottom: 0 !important;
-  font-size: 3.5rem !important;
-}
-
-@media (min-width: 1024px), print {
-  h6, h6 span, h6 a 
-{
-  font-family: font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: -0.9px;
-  margin-bottom: 0 !important;
-  font-size: 5rem !important;
-}
-}
-
-.columns {
-    display: none !IMPORTANT;
-}
-
-@media (max-width: 375px) {
-.home-instagram-image h3 {
-    color: white;
-    font-style: normal;
-    bottom: 0;
-    left: 10px;
-    position: absolute;
-    font-weight: 500;
-    text-decoration: none !important;
-    font-size: 1.8rem !important;
-    letter-spacing: -0.9px;
-    text-align: left;
-}
-}
-
-@media (max-width: 375px) {
-.home-instagram-image p {
-    color: white;
-    left: 10px;
-    position: absolute;
-    text-decoration: none !important;
-    font-size: 1.2rem !important;
-    letter-spacing: -0.9px;
-    text-align: left;
-    top: 10px;
-    font-style: normal;
-}
-}
-
-.home-instagram-image p {
-color: white;
-    left: 10px;
-    position: absolute;
-    text-decoration: none !important;
-    font-size: 1.5rem !important;
-    letter-spacing: -0.9px;
-    text-align: left;
-    top: 10px;
-    font-style: normal;
-}
-
-
-@media screen and (max-width: 414px){
- [data-content-type=buttons]{
-text-align: center !important;
-}
-}
-
-@media screen and (max-width: 414px){
-.lp-button {
-margin-top: -30px !important;
-}
 }
