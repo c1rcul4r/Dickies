@@ -335,6 +335,26 @@
   overflow: hidden;
 }
 
+.home.vimeo-wrapper [data-content-type=buttons] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 10000 !important;
+}
+
+.home.vimeo-wrapper [data-content-type=button-item],
+.home.vimeo-wrapper [data-content-type=button-item] a {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .home.vimeo-wrapper [data-content-type="html"] {
   width: 100%;
   height: 100%;
