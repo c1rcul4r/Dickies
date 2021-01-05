@@ -4,6 +4,10 @@
 /* © CIRCULAR AGENCY */
 /* General */
 
+.top-fullwidth-container .block-static-block.widget:last-child {
+  display: none !important;
+}
+
 [data-element="main"] .product-items {
   border: 0 none !important;
 }
