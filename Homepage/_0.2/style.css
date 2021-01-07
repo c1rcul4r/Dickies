@@ -4,7 +4,7 @@
 /* © CIRCULAR AGENCY */
 /* General */
 
-.top-fullwidth-container .block-static-block.widget:last-child {
+.top-fullwidth-container .block-static-block.widget [data-content-type=row][data-appearance=full-bleed]:last-child {
   display: none !important;
 }
 
