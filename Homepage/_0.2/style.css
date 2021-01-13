@@ -642,6 +642,38 @@
   display: flex !important;
 }
 
+.pagebuilder-button-secondary {
+  min-width: 150px !important;
+}
+
+@media only screen and (min-width:768px) {
+  .home.section-banner {
+    height: 40vw !important;
+    min-height: unset !important;
+    padding: 0 !important;
+    margin: 0 0 2.5vw !important;
+    justify-content: center !important;
+    display: flex !important;
+  }
+
+  .home.section-banner.icons-fit {
+    padding: 0 0 5vw !important;
+    justify-content: flex-end !important;
+  }
+
+  .home.section-banner .pagebuilder-column:first-child [data-content-type=buttons] {
+    text-align: right !important;
+  }
+
+  .home.section-banner .pagebuilder-column:last-child [data-content-type=buttons] {
+    text-align: left !important;
+  }
+
+  .home.section-banner.buttons.mobile {
+    display: none !important;
+  }
+}
+
 /* MTM Section */
 
 .home.mtm h3 {
