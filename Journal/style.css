@@ -68,14 +68,9 @@
   margin: 0 !important
 }
 
-.category-journal .featured-primary .description .heading {
-  font-size: calc(45px + (60 - 45) * ((100vw - 360px) / (1440 - 360))) !important;
-  line-height: 1 !important;
-  margin: 0 !important
-}
-
+.category-journal .featured-primary .description .heading,
 .category-products .featured-primary .description .heading {
-  font-size: 3.5rem;
+  font-size: calc(40px + (60 - 40) * ((100vw - 360px) / (1440 - 360))) !important;
   line-height: 1 !important;
   margin: 0 !important
 }
@@ -87,6 +82,7 @@
   line-height: 1.4 !important;
   margin: 1vw 0 0.5vw !important;
   width: 100% !important;
+  text-transform: uppercase !important;
 }
 
 .category-products .top-stories h5,
@@ -103,7 +99,7 @@
 .category-latest-articles .container .thumbs-description .pagebuilder-button-link {
   /* font-family: 'Source Code Pro', monospace; */
   font-weight: 400 !important;
-  font-size: 1.5rem;
+  font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1440 - 360))) !important;
   color: #fff;
   letter-spacing: 0;
   text-align: center;
@@ -128,11 +124,11 @@
   width: 80%;
   font-weight: 700;
   color: #fff;
-  font-size: 2.25rem !important;
+  font-size: font-size: calc(20px + (22.5 - 20) * ((100vw - 360px) / (1440 - 360))) !important;
   letter-spacing: -0.4px !important;
   line-height: 1.25 !important;
   text-align: center;
-  margin: 0 !important;
+  margin: 0 0 .75vw !important;
   text-transform: uppercase !important
 }
 
@@ -184,37 +180,21 @@
   text-align: right !important
 }
 
-.category-journal .featured-primary .description .caption {
+.category-journal .featured-primary .description .caption,
+.category-products .featured-primary .description .caption {
   color: #000 !important;
   font-weight: 400;
   font-size: 2rem !important;
   width: 100%;
   margin-top: auto !important;
+  margin-bottom: 1vw !important;
 }
 
-
-.category-products .featured-primary .description .caption {
-  color: #000 !important;
-  font-weight: 400;
-  font-size: 1.6rem !important;
-  width: 100%;
-  margin-top: auto !important;
-}
-
-.category-journal .featured-primary .description .caption p {
+.category-journal .featured-primary .description .caption p,
+.category-products .featured-primary .description .caption p  {
   font-size: calc(16px + (20 - 16) * ((100vw - 360px) / (1440 - 360))) !important;
   line-height: 1.4 !important;
   margin: 0 !important;
-}
-
-.category-products .featured-primary .description .caption p {
-  font-size: 1.6rem !important;
-  line-height: 1.4 !important;
-}
-
-.category-journal .featured-primary .description .word-by p,
-.category-products .featured-primary .description .word-by p {
-  opacity: .7 !important;
 }
 
 .category-journal .featured-primary .description .heading,
@@ -238,6 +218,7 @@
   margin: 0 !important;
   padding: 0 !important;
   text-decoration: none !important;
+  text-transform: uppercase;
   /* font-family: 'Source Code Pro', monospace; */
   color: #fff !important;
 }
@@ -266,6 +247,24 @@
 }
 
 @media only screen and (max-width:768px) {
+  .category-journal .featured-primary .thumbs-description h5,
+  .category-journal .featured-secondary .thumbs-description h5,
+  .category-latest-articles .container .thumbs-description h5 {
+    width: 80%;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2.25rem !important;
+    letter-spacing: -0.4px !important;
+    line-height: 1.25 !important;
+    text-align: center;
+    margin: 0 0 2vw !important;
+    text-transform: uppercase !important
+  }
+
+  .category-journal .featured-primary .description .caption {
+    margin-bottom: 0 !important;
+  }
+
   .category-journal .top-banner h2 {
     color: #fff !important;
     text-transform: uppercase;
@@ -354,7 +353,7 @@
   .category-products .featured-primary .description .heading {
     color: #000 !important;
     width: 100%;
-    padding: 0 0 15vw !important;
+    padding: 0 !important;
     text-transform: uppercase !important;
   }
 }
@@ -374,12 +373,6 @@
 /* Sitewide */
 .journal-menu, .journal__sliderthumbs, .journal__featured, .category-journal .featured-primary,
 .category-journal .featured-secondary {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto !important;
-}
-
-.category-products .featured-primary {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto !important;
@@ -433,7 +426,8 @@
 @media only screen and (max-width:1440px) {
 
   .journal-menu, .journal__sliderthumbs, .journal__featured, .category-journal .featured-primary,
-  .category-journal .featured-secondary {
+  .category-journal .featured-secondary,
+  .category-products .featured-primary {
     width: 90vw;
     max-width: 1440px;
     margin: 0 auto !important;
@@ -446,7 +440,7 @@
 }
 
 .thumbs-description, .thumbs-description .category {
-  padding: 1vw 0 0 !important;
+  padding: 0 !important;
   display: block !important;
 }
 
@@ -691,7 +685,20 @@
   display: block;
 }
 
+.category-products .list,
+.category-community .list,
+.category-stories .list,
+.category-latest-articles .container {
+  width: 90vw !important;
+}
+
 @media only screen and (max-width:768px) {
+
+  .category-journal .featured-primary .description .category-button,
+  .category-products .featured-primary .description .category-button {
+    margin-top: 1.15rem !important;
+    margin-bottom: calc(1.15rem + 15vw) !important;
+  }
 
   .category-products .list,
   .category-community .list,
@@ -763,6 +770,8 @@
 
 .category-journal .inner-banner h3 {
   padding-bottom: 1vh !important;
+  width: 30% !important;
+  margin: 0 auto !important;
 }
 
 .category-journal .inner-banner .caption {
@@ -791,7 +800,7 @@
     display: flex;
     justify-content: center !important;
     height: 40vw !important;
-    margin: 5vw 0 2.5vw !important;
+    margin: 5vw 0 5vw !important;
     position: relative;
   }
 }
@@ -913,7 +922,16 @@
     padding: 0 0 5vw !important;
   }
 
-  .category-journal .featured-primary .pagebuilder-column {
+  .category-products .featured-primary .pagebuilder-column-group {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    flex-direction: column-reverse;
+    padding: 0 0 20vw !important;
+  }
+
+  .category-journal .featured-primary .pagebuilder-column,
+  .category-products .featured-primary .pagebuilder-column {
     width: 100% !important;
   }
 
@@ -921,7 +939,7 @@
     display: flex;
     justify-content: center !important;
     height: 125vw !important;
-    margin: 20vw 0 15vw !important;
+    margin: 20vw 0 20vw !important;
     position: relative;
   }
 
@@ -975,7 +993,7 @@
   .category-latest-articles .container {
     display: grid !important;
     grid-template-columns: 100%;
-    grid-gap: 2%;
+    grid-gap: 5vw;
   }
 
   .category-journal .featured-secondary .pagebuilder-column:nth-last-of-type(-n+1) {
@@ -1041,7 +1059,7 @@
   .category-latest-articles .top-banner {
     position: relative;
     background-size: 100vw !important;
-    height: 50vw !important;
+    height: 125vw !important;
     justify-content: center !important;
     align-items: center !important
   }
@@ -1159,6 +1177,15 @@
 .thumbs-link a {
   width: 100% !important;
   height: 100% !important;
+  font-weight: 400 !important;
+  line-height: 1.8461 !important;
+  font-size: 1.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  /* font-family: 'Source Code Pro', monospace; */
+  color: #fff !important;
 }
 
 @media only screen and (max-width:768px) {
