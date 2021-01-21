@@ -326,7 +326,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 56.25vw;
+  height: 50vw;
   /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
   max-height: 810px;
   /* max-width: 1440px; */
@@ -364,9 +364,9 @@
 .home.vimeo-wrapper iframe.desktop {
   display: block;
   width: 100vw !important;
-  height: 56.25vw !important;
+  height: 50vw !important;
   min-height: 100vh !important;
-  min-width: 177.77vh !important;
+  min-width: 200vh !important;
   /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
   /* max-height: 810px;
   max-width: 1440px; */
