@@ -22,7 +22,6 @@
 .category-stories #maincontent>* {
   font-family: 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
-
 }
 
 .category-journal h2,
@@ -254,7 +253,7 @@
     width: 80%;
     font-weight: 700;
     color: #fff;
-    font-size: font-size: calc(20px + (22.5 - 20) * ((100vw - 360px) / (1440 - 360))) !important;
+    font-size: calc(20px + (22.5 - 20) * ((100vw - 360px) / (1440 - 360))) !important;
     letter-spacing: -0.4px !important;
     line-height: 1.25 !important;
     text-align: center;
@@ -385,10 +384,6 @@
   position: relative;
 }
 
-/* .thumbs:hover {
-  opacity: .9 !important;
-} */
-
 .category-products .thumbs {
   background-position: top center !important;
 }
@@ -473,7 +468,7 @@
 
 .journal-menu-sticky {
   position: sticky;
-  top: 128px;
+  top: 126px;
   z-index: 10;
 }
 
@@ -487,7 +482,19 @@
 }
 
 .journal-menu .item {
-  padding: 20px !important
+  padding: 10px 20px !important
+}
+
+.category-products .journal-menu .item.products {
+  border-bottom: 3px solid black !important;
+}
+
+.category-community .journal-menu .item.community {
+  border-bottom: 3px solid black !important;
+}
+
+.category-stories .journal-menu .item.stories {
+  border-bottom: 3px solid black !important;
 }
 
 .journal-menu .pagebuilder-button-link, .journal-menu ul li a {
@@ -498,7 +505,7 @@
 .journal-menu .pagebuilder-button-link {
   padding: 0 !important;
   margin: 0 !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: 700 !important
 }
 
@@ -512,19 +519,21 @@
   font-size: 18px
 }
 
-@media only screen and (max-width:768px) {
-  .journal-menu {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto !important;
-    margin-bottom: 10vw !important;
-    padding: 0 !important
-  }
-
+@media only screen and (max-width:1280px) {
   .journal-menu-sticky {
     position: sticky;
     top: 56px;
     z-index: 10;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .journal-menu {
+    width: 90vw;
+    max-width: 1440px;
+    margin: 0 auto !important;
+    margin-bottom: 10vw !important;
+    padding: 0 !important
   }
 
   .journal-menu ul {
@@ -542,6 +551,11 @@
 
   .journal-menu .pagebuilder-button-link {
     font-size: 13px !important;
+  }
+
+  .journal-menu .pagebuilder-column-group .menu__list {
+    justify-content: space-between !important;
+    width: 90vw !important;
   }
 }
 
@@ -704,7 +718,10 @@
   display: flex !important;
 }
 
-.category-journal .word-by {
+.category-journal .word-by,
+.category-products .word-by,
+.category-stories .word-by,
+.category-community .word-by {
   display: block;
 }
 
@@ -769,7 +786,10 @@
     padding-bottom: 0 !important
   }
 
-  .category-journal .word-by {
+  .category-journal .word-by,
+  .category-products .word-by,
+  .category-stories .word-by,
+  .category-community .word-by {
     display: none;
   }
 }
@@ -935,6 +955,7 @@
   color: #000 !important;
   padding: 0 10px !important;
 }
+
 
 @media only screen and (max-width:768px) {
   .category-products .list,
@@ -1138,8 +1159,7 @@
 .category-products .list,
 .category-community .list,
 .category-stories .list {
-  margin-top: 0 !important;
-  margin-bottom: 4vw !important;
+  margin: 0 auto !important;
 }
 
 .category-products .list .thumbs-description .caption,
@@ -1348,11 +1368,24 @@
   }
 }
 
-.category-journal .bottom-cta {
+.category-journal .bottom-cta,
+.category-products .bottom-cta,
+.category-stories .bottom-cta,
+.category-community .bottom-cta {
   padding: 15vw 0 !important;
 }
 
-.category-journal .bottom-cta .pagebuilder-button-link {
+.category-journal .bottom-cta [data-content-type=button-item]:first-child,
+.category-products .bottom-cta [data-content-type=button-item]:first-child,
+.category-stories .bottom-cta [data-content-type=button-item]:first-child,
+.category-community .bottom-cta [data-content-type=button-item]:first-child {
+  pointer-events: none !important;
+}
+
+.category-journal .bottom-cta .pagebuilder-button-link,
+.category-products .bottom-cta .pagebuilder-button-link,
+.category-stories .bottom-cta .pagebuilder-button-link,
+.category-community .bottom-cta .pagebuilder-button-link {
   padding: 0 !important;
   margin: 0 !important;
   font-size: calc(25px + (35 - 25) * ((100vw - 360px) / (1440 - 360))) !important;
@@ -1361,14 +1394,19 @@
   line-height: 1.125 !important;
 }
 
-.category-journal .bottom-cta [data-content-type="button-item"]:last-child .pagebuilder-button-link {
+.category-journal .bottom-cta [data-content-type="button-item"]:last-child .pagebuilder-button-link,
+.category-products .bottom-cta [data-content-type="button-item"]:last-child .pagebuilder-button-link,
+.category-stories .bottom-cta [data-content-type="button-item"]:last-child .pagebuilder-button-link,
+.category-community .bottom-cta [data-content-type="button-item"]:last-child .pagebuilder-button-link {
   text-decoration: underline !important;
 }
 
 @media only screen and (min-width:768px) {
-  .category-journal .bottom-cta {
+  .category-journal .bottom-cta,
+  .category-products .bottom-cta,
+  .category-stories .bottom-cta,
+  .category-community .bottom-cta {
     padding: 5vw 0 !important;
   }
 }
 </style>
-    
