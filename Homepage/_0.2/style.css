@@ -797,6 +797,10 @@
   .home.mtm .heroes__image {
     filter: grayscale(100%) !important;
   }
+
+  .home.mtm .heroes__image:hover {
+    filter: grayscale(0%) !important;
+  }
 }
 
 /* Journal Section */

@@ -99,7 +99,8 @@
 
 .category-journal .featured-primary .thumbs-description .pagebuilder-button-link,
 .category-journal .featured-secondary .thumbs-description .pagebuilder-button-link,
-.category-latest-articles .container .thumbs-description .pagebuilder-button-link {
+.category-latest-articles .container .thumbs-description .pagebuilder-button-link,
+.category-journal .inner-banner .category .pagebuilder-button-link {
   /* font-family: 'Source Code Pro', monospace; */
   font-weight: 400 !important;
   font-size: calc(10px + (13 - 10) * ((100vw - 360px) / (1440 - 360))) !important;
@@ -118,6 +119,14 @@
   color: #fff !important;
   padding: 0 10px !important;
   margin-bottom: 0 !important;
+  text-decoration: none !important
+}
+
+.category-journal .inner-banner .category [data-content-type=button-item] {
+  background-color: #000 !important;
+  color: #fff !important;
+  padding: 0 10px !important;
+  margin-bottom: 2vw !important;
   text-decoration: none !important
 }
 
@@ -166,21 +175,26 @@
   left: 1.5vw !important;
 }
 
-.category-journal .featured-primary .description .button {
+.category-journal .featured-primary .description .button,
+.category-products .featured-primary .description .button,
+.category-community .featured-primary .description .button,
+.category-stories .featured-primary .description .button {
   text-transform: uppercase;
   color: #000 !important;
   /* font-family: 'Source Code Pro', monospace; */
   font-weight: 400;
   text-decoration: underline;
   font-size: 1.5rem !important;
-  position: absolute;
-  right: 40px;
-  bottom: 40px;
+  position: relative;
+  margin-top: 1vw !important;
   padding: 0 !important;
-  text-align: right !important
+  text-align: center !important
 }
 
-.category-journal .featured-primary .description .button .pagebuilder-button-link {
+.category-journal .featured-primary .description .button .pagebuilder-button-link,
+.category-products .featured-primary .description .button .pagebuilder-button-link,
+.category-community .featured-primary .description .button .pagebuilder-button-link,
+.category-stories .featured-primary .description .button .pagebuilder-button-link {
   margin: 0 !important;
   padding: 0 !important;
   text-align: right !important
@@ -262,6 +276,23 @@
 }
 
 @media only screen and (max-width:768px) {
+  .category-journal .featured-primary .description .button,
+  .category-products .featured-primary .description .button,
+  .category-community .featured-primary .description .button,
+  .category-stories .featured-primary .description .button {
+    text-transform: uppercase;
+    color: #000 !important;
+    /* font-family: 'Source Code Pro', monospace; */
+    font-weight: 400;
+    text-decoration: underline;
+    font-size: 1.5rem !important;
+    position: relative;
+    margin-top: 5vw !important;
+    padding: 0 !important;
+    text-align: center !important
+  }
+
+
   .category-journal .featured-primary .thumbs-description h5,
   .category-journal .featured-secondary .thumbs-description h5,
   .category-latest-articles .container .thumbs-description h5 {
