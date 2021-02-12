@@ -1,0 +1,409 @@
+<style>
+/* © CIRCULAR AGENCY */
+/* General */
+.page-title-wrapper {
+  display: none !important
+}
+
+.breadcrumbs {
+  display: none !important;
+}
+
+.css {
+  height: 0 !important;
+}
+
+
+/* .mobile {
+  display: block !important;
+}
+
+.desktop {
+  display: none !important;
+}
+
+@media only screen and (min-width:414px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: block !important;
+  }
+} */
+
+/* Typography */
+
+#maincontent>* {
+  font-family: 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+#maincontent [data-content-type="heading"] {
+  font-weight: 700 !important;
+  letter-spacing: -0.4px !important;
+}
+
+#maincontent h3 {
+  font-size: 24px !important;
+  letter-spacing: -0.4px !important;
+  margin: 0 !important;
+  padding-bottom: 5vw !important;
+  text-align: center !important;
+}
+
+#maincontent p  {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+  padding: 0 0 5vw !important;
+}
+
+#maincontent [data-content-type="text"] p:last-child  {
+  padding: 0!important;
+}
+
+#maincontent h6 {
+  font-weight: 700 !important;
+  letter-spacing: -0.4px !important;
+  font-family: 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: calc(17px + (20 - 17) * ((100vw - 360px) / (1440 - 360))) !important;
+  margin: 0 !important;
+  padding: 0 0 7.5vw !important;
+}
+
+#maincontent .image-slider p {
+  font-family: 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  font-size: calc(18px + (24 - 18) * ((100vw - 360px) / (1440 - 360))) !important;
+}
+
+#maincontent .image-slider [data-element="content"] p:last-child {
+  padding: 0!important;
+}
+
+@media only screen and (min-width:414px) {
+  #maincontent h3 {
+    padding: 0 0 1.25vw !important;
+  }
+
+  #maincontent .discover-more-section h3 {
+    text-align: left !important;
+  }
+
+  #maincontent p  {
+    padding: 0 0 0.5vw !important;
+  }
+
+  #maincontent .image-slider p {
+    width: 100% !important;
+  }
+
+  #maincontent h6 {
+    padding: 0 0 1.25vw !important;
+  }
+}
+
+/* Top Banner */
+
+.top-banner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 125vw;
+  pointer-events: all !important;
+  cursor: pointer !important;
+  overflow: hidden;
+}
+
+.top-banner iframe.desktop {
+  display: none;
+  width: 100vw !important;
+  height: 56.25vw !important;
+  min-height: 100vh !important;
+  min-width: 200vh !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+
+.top-banner iframe.mobile {
+  display: block;
+  width: 100vw;
+  height: 125vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+
+@media only screen and (min-width:414px) {
+  .top-banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56.25vw;
+    pointer-events: all;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+.top-banner iframe.desktop {
+  display: block;
+}
+
+.top-banner iframe.mobile {
+  display: none;
+}
+}
+
+/* Primary Section */
+
+.primary-section {
+  padding: 20vw 10vw 0 !important;
+}
+
+@media only screen and (min-width:414px) {
+  .primary-section {
+    padding: 5vw 5vw 0 !important;
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Products Section */
+
+.products-section {
+  padding: 20vw 10vw 0 !important;
+  flex-direction: column !important;
+}
+
+.products-section .pagebuilder-column:first-child {
+  padding: 0 0 2.5vw !important
+}
+
+.products-section.last {
+  padding: 10vw 10vw 0 !important;
+}
+
+.products-section [data-content-type="products"] .block {
+  margin: 0 !important;
+}
+
+.products-section .block.widget .product-items {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.products-section .product-item:after {
+  display: none !important;
+}
+
+.products-section .slick-arrow {
+  display: none !important;
+}
+
+.products-section .slick-list {
+  padding: 0 !important;
+}
+
+.products-section .slick-track {
+  width: auto !important;
+  transform: none !important;
+}
+
+.products-section .slick-slide {
+  width: 50% !important;
+  border-left: none !important;
+}
+
+@media only screen and (min-width:414px) {
+  .products-section {
+    padding: 5vw 5vw 0 !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+  }
+
+  .products-section.last {
+    padding: 2.5vw 5vw 0 !important;
+  }
+
+  .products-section .pagebuilder-column-group {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+
+  .products-section.last .pagebuilder-column-group {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+  }
+
+  .products-section .pagebuilder-column {
+    width: 100% !important;
+    max-width: calc(50% - 1vw) !important;
+  }
+
+  .products-section.last .pagebuilder-column:last-child {
+    margin-left: 0 !important
+  }
+
+  .products-section.last .pagebuilder-column:first-child {
+    padding: unset !important;
+  }
+
+  .products-section .slick-slide {
+    width: 50% !important;
+    border-left: none !important;
+  }
+}
+
+/* Slider Section */
+
+.image-slider {
+  padding: 20vw 0 0 !important;
+}
+
+.image-slider .pagebuilder-slide-wrapper {
+  height: 200vw !important;
+  min-height: unset !important;
+  display: flex !important;
+  align-items: flex-end !important;
+}
+
+.image-slider .pagebuilder-overlay {
+  padding: 0 !important;
+}
+
+.image-slider .pagebuilder-poster-content {
+  height: calc(100vw - 20vw) !important;
+  min-height: unset !important;
+  padding: 10vw !important;
+  display: flex;
+  align-items: center !important;
+}
+
+@media only screen and (min-width:414px) {
+  .image-slider {
+    padding: 5vw 0 0 !important;
+  }
+
+  .image-slider .pagebuilder-slide-wrapper {
+    height: 50vw !important;
+    min-height: unset !important;
+    display: flex !important;
+    align-items: flex-end !important;
+  }
+
+  .image-slider .right .pagebuilder-slide-wrapper {
+    justify-content: flex-end !important;
+  }
+
+  .image-slider .pagebuilder-overlay {
+    padding: 0 !important;
+  }
+
+  .image-slider .pagebuilder-poster-content {
+    width: calc(50vw - 10vw) !important;
+    height: calc(50vw - 10vw) !important;
+    min-height: unset !important;
+    padding: 5vw !important;
+  }
+}
+
+/* Discover More */
+
+.discover-more-section {
+  padding: 20vw 10vw 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width:414px) {
+  .discover-more-section {
+    padding: 5vw 5vw 0 !important;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+  }
+
+  .discover-more-section .pagebuilder-column-group {
+    display: grid !important;
+    grid-template-columns: calc(33.3333% - 0.6666vw) calc(33.3333% - 0.6666vw) calc(33.3333% - 0.6666vw);
+    grid-gap: 1vw;
+  }
+
+  .discover-more-section .pagebuilder-column {
+    width: 100% !important;
+  }
+}
+
+/* Stripe */
+
+.journal-stripe {
+  padding: 28px 0 !important;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding: 20px 0;
+  cursor: pointer;
+  -webkit-transition: bottom 1s;
+  -moz-transition: bottom 1s;
+  -ms-transition: bottom 1s;
+  -o-transition: bottom 1s;
+  transition: bottom 1s;
+  /* font-family: 'Source Code Pro', monospace; */
+  letter-spacing: 0.47px;
+}
+
+.journal-stripe-animation {
+  -moz-animation: scroll-left 6s linear infinite;
+  -webkit-animation: scroll-left 6s linear infinite;
+  animation: scroll-left 6s linear infinite;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.journal-stripe-text {
+  font-size: 16px;
+  line-height: 11px !important;
+  padding: 0 30px;
+  margin-right: 110px;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+.gif figure {
+  display: none;
+}
+
+.gif figure img {
+  width: 100vw !important;
+}
+
+
+</style>
