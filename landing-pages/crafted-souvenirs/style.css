@@ -303,15 +303,12 @@
     height: 50vw !important;
     min-height: unset !important;
     display: flex !important;
-    align-items: flex-end !important;
-  }
-
-  .image-slider .right .pagebuilder-slide-wrapper {
-    justify-content: flex-end !important;
+    align-items: flex-start !important;
   }
 
   .image-slider .pagebuilder-overlay {
-    padding: 0 !important;
+    padding: 0 0 0 10vw !important;
+    width: 60vw !important;
   }
 
   .image-slider .pagebuilder-poster-content {
