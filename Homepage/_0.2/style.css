@@ -270,7 +270,7 @@
   justify-content: flex-end !important;
 }
 
-/* .home.top-banner::before {
+.home.top-banner::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -278,7 +278,7 @@
   height: 100%;
   content: "";
   backdrop-filter: brightness(0.7);
-} */
+}
 
 .home.top-banner>* {
   z-index: 10;
@@ -432,7 +432,7 @@
   justify-content: flex-end !important;
 }
 
-.home.inner-banner::before {
+/* .home.inner-banner::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -440,7 +440,7 @@
   height: 100%;
   content: "";
   backdrop-filter: brightness(0.7);
-}
+} */
 
 .home.inner-banner>* {
   z-index: 10;
