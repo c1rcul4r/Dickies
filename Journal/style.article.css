@@ -9,4 +9,259 @@
   display: none !important;
 }
 
+/* Typography */
+
+.page-main .related.title h3 {
+  font-size: calc(25px + (35 - 25) * ((100vw - 360px) / (1440 - 360))) !important;
+  letter-spacing: -0.4px !important;
+  padding: 5vh 0 2.5vh;
+  margin: 0 !important;
+  font-weight: 700;
+  letter-spacing: -0.4px !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-main .related .pagebuilder-column-group>* {
+  font-family: 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-main .related .pagebuilder-column-group .pagebuilder-column {
+  width: 100% !important;
+}
+
+.page-main .related .pagebuilder-column-group h5,
+.page-main .related .pagebuilder-column-group h3 {
+  /* font-family: 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-weight: 700;
+  letter-spacing: -0.4px !important;
+  /* text-transform: uppercase !important; */
+}
+
+.page-main .related .pagebuilder-column-group h3 {
+  font-size: calc(25px + (35 - 25) * ((100vw - 360px) / (1440 - 360))) !important;
+  letter-spacing: -0.4px !important;
+  padding-bottom: 1vh;
+  margin: 0 !important
+}
+
+.page-main .related .pagebuilder-column-group h5 {
+  font-size: 2.5rem;
+  line-height: 1 !important;
+  margin: 0 !important
+}
+
+.page-main .related .pagebuilder-column-group h5 {
+  font-size: 2rem;
+  line-height: 1.4 !important;
+  margin: 1vw 0 0.5vw !important;
+  width: 100% !important;
+  text-transform: uppercase !important;
+}
+
+@media only screen and (max-width:768px) {
+  .page-main .related .pagebuilder-column-group h5 {
+    /* font-family: 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    font-weight: 700;
+    font-size: 1.9rem;
+    letter-spacing: -0.4px !important;
+    margin: 3.5vw 0 2.5vw !important;
+  }
+}
+
+/* Utilities */
+:root {
+  --threecolumn: calc(100% - 4%);
+  --twocolumn: calc(100% - 2%)
+}
+
+.nopadding {
+  padding: 0 !important
+}
+
+@media only screen and (min-width:768px) {}
+
+/* Sitewide */
+.related .pagebuilder-column-group .thumbs {
+  width: 100%;
+  min-height: unset !important;
+  position: relative;
+}
+
+.page-main .related .pagebuilder-column-group .thumbs {
+  background-position: top center !important;
+  position: unset;
+}
+
+.related .pagebuilder-column-group .thumbs::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  backdrop-filter: brightness(0.9);
+  pointer-events: none !important;
+}
+
+.page-main .related .pagebuilder-column-group .thumbs::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  backdrop-filter: none;
+  pointer-events: none !important;
+}
+
+.related .pagebuilder-column-group .thumbs:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.page-main .related .pagebuilder-column-group .thumbs:after {
+  content: "";
+  display: block;
+  padding-bottom: 80%;
+}
+
+.page-main .related .pagebuilder-column-group .thumbs:hover::after {
+  backdrop-filter: brightness(0.7);
+}
+
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:1440px) {}
+
+/* Journal */
+.related .pagebuilder-column-group .thumbs-description>* {
+  z-index: 1000;
+}
+
+.related .pagebuilder-column-group .thumbs-description, .related .pagebuilder-column-group .thumbs-description .category {
+  padding: 0 !important;
+  display: block !important;
+}
+
+.page-main .related .pagebuilder-column-group [data-content-type="block"] {
+  width: 100% !important;
+  padding: 0 !important
+}
+
+/* .featured, */
+.page-main .related {
+  width: 100% !important;
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+  padding: 0 2vw !important;
+}
+
+.page-main .related .pagebuilder-column-group {
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+}
+
+@media only screen and (max-width:768px) {
+  .page-main .related .pagebuilder-column-group {
+    padding: 0 !important;
+    width: 80vw !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Latest Slider */
+
+.related .pagebuilder-column-group .thumbs-description .caption {
+  display: none !important
+}
+
+.page-main .related .pagebuilder-column-group {
+  display: grid !important;
+  grid-template-columns: calc(33.3333% - 1.3333vw) calc(33.3333% - 1.3333vw) calc(33.3333% - 1.3333vw);
+  grid-gap: 2vw;
+  row-gap: 4vw;
+}
+
+@media only screen and (max-width:768px) {
+  .page-main .related .pagebuilder-column-group {
+    padding: 0 !important;
+  }
+
+  .page-main .related .pagebuilder-column-group {
+    display: grid !important;
+    grid-template-columns: 100%;
+    grid-gap: 10vw;
+  }
+
+  /* .category-journal .featured-secondary .pagebuilder-column:nth-last-of-type(-n+1) {
+    display: none !important;
+  } */
+}
+
+/* Category - Product/Stories/Community */
+.page-main .related .pagebuilder-column-group .thumbs-description .category {
+  display: none !important;
+}
+
+.page-main .related .pagebuilder-column-group {
+  margin: 0 auto !important;
+}
+
+.page-main .related .pagebuilder-column-group .thumbs-description .caption {
+  display: block !important;
+  font-size: 1.6rem !important;
+  line-height: 1.4 !important;
+  width: 75% !important;
+}
+
+.page-main .related .pagebuilder-column-group .thumbs-description h2 {
+  width: 60%;
+  font-weight: 700;
+  color: #000;
+  font-size: 2.5rem;
+  letter-spacing: -0.4px !important;
+  text-align: left;
+  margin: 0 !important;
+  text-transform: uppercase !important
+}
+
+.related .pagebuilder-column-group .thumbs-link {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  z-index: 100 !important;
+  opacity: 0 !important;
+}
+
+.related .pagebuilder-column-group .thumbs-link>* {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.related .pagebuilder-column-group .thumbs-link a {
+  width: 100% !important;
+  height: 100% !important;
+  font-weight: 400 !important;
+  line-height: 1.8461 !important;
+  font-size: 1.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  /* font-family: 'Source Code Pro', monospace; */
+  color: #fff !important;
+}
+
+@media only screen and (max-width:768px) {
+  .page-main .related .pagebuilder-column-group .thumbs-description .caption {
+    display: block !important;
+    font-size: 1.6rem !important;
+    line-height: 1.4 !important;
+    width: 100% !important;
+  }
+}
 </style>

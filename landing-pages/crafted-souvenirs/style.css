@@ -1,7 +1,7 @@
 <style>
 /* © CIRCULAR AGENCY */
 /* General */
-@font-face {
+/* @font-face {
     font-family:"GT America Regular";
     src:url("https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.woff2") format("woff2"),url("https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.woff") format("woff"),url("https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.otf") format("opentype");
     font-style:normal;font-weight:400;
@@ -17,7 +17,7 @@
     font-family:"GT America Mono Regular";
     src:url("GT-America-Mono-Regular.woff2") format("woff2"),url("GT-America-Mono-Regular.woff") format("woff"),url("GT-America-Mono-Regular.otf") format("opentype");
     font-style:normal;font-weight:400;
-}
+} */
 
 .top-fullwidth-container {
   z-index: 1 !important;
@@ -74,7 +74,7 @@
 
 #maincontent h1,
 #maincontent h4 {
-  font-family:"GT America Compressed Bold", "HelveticaNeue-CondensedBold", "Helvetica Neue" !important;
+  font-family:"GT America Compressed Bold", "HelveticaNeue-CondensedBold", "Helvetica Neue", 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   font-weight: 700 !important;
   letter-spacing: -0.4px !important;
 }
@@ -106,7 +106,7 @@
   font-weight: 700 !important;
   letter-spacing: -0.4px !important;
   line-height: 0.8 !important;
-  font-family:"GT America Compressed Bold", "HelveticaNeue-CondensedBold", "Helvetica Neue" !important;
+  font-family:"GT America Compressed Bold", "HelveticaNeue-CondensedBold", 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: calc(50px + (85 - 50) * ((100vw - 360px) / (1440 - 360))) !important;
   margin: 0 !important;
@@ -116,12 +116,21 @@
 #maincontent h2 {
   font-weight: 700 !important;
   letter-spacing: -0.4px !important;
-  font-family:"GT America Compressed Bold", "HelveticaNeue-CondensedBold", "Helvetica Neue" !important;
+  font-family:"GT America Compressed Bold", "HelveticaNeue-CondensedBold", 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: calc(24px + (48 - 24) * ((100vw - 360px) / (1440 - 360))) !important;
   margin: 0 !important;
   line-height: 0.9 !important;
   padding: 0 0 3vw !important;
+}
+
+[lang="it"] #maincontent .slider h2,
+[lang="es"] #maincontent .slider h2,
+[lang="fr"] #maincontent .slider h2,
+[lang="nl"] #maincontent .slider h2,
+[lang="de"] #maincontent .slider h2
+ {
+  line-height: 1.1 !important;
 }
 
 #maincontent h6 {
@@ -354,6 +363,20 @@
 .plp .slick-slide {
   width: 50% !important;
   border-left: none !important;
+}
+
+.plp .product .product-item-photo {
+  display: none !important;
+}
+
+.plp .product .block.widget .product-items .product-item-details {
+  padding-left: 8px !important;
+  padding-right: 0 !important;
+  padding-top: 8px !important;
+}
+
+.plp .product .vf-product-badges {
+  display: none !important;
 }
 
 @media only screen and (min-width:414px) {
