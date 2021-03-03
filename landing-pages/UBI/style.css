@@ -1,0 +1,185 @@
+/* © CIRCULAR AGENCY */
+
+/* General */
+
+.page-title-wrapper {
+  display: none !important
+}
+
+.breadcrumbs {
+  display: none !important;
+}
+
+/* top-banner */
+
+#maincontent .top-banner {
+  width: 100vw;
+  height: 125vw;
+}
+
+@media only screen and (min-width:414px) {
+  #maincontent .top-banner {
+    width: 100vw;
+    height: 50vw;
+  }
+}
+
+/* inner-banner */
+
+#maincontent .inner-banner {
+  width: 100vw;
+  height: 100vw;
+}
+
+@media only screen and (min-width:414px) {
+  #maincontent .inner-banner {
+    width: 100vw;
+    height: 50vw;
+  }
+}
+
+/* text-container */
+
+#maincontent .text-container {
+  position: relative;
+  text-align: center;
+  padding: 20vw 10vw !important;
+}
+
+@media only screen and (min-width:414px) {
+  #maincontent .text-container {
+    padding: 5vw 5vw !important;
+    width: 50% !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* slider-container text */
+
+#maincontent .slider-container.text h4  {
+  font-family: var(--ff-medium);
+  font-size: var(--fs-heading-long-04);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+  text-align: center !important;
+}
+
+#maincontent .slider-container.text p {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-body-long-01);
+  line-height: var(--lh-lowercase);
+  letter-spacing: var(--ls);
+  text-align: center !important;
+}
+
+#maincontent .slider-container.text {
+  padding: 20vw 0 0 !important;
+}
+
+#maincontent .slider-container.text .pagebuilder-slide-wrapper {
+  height: 200vw !important;
+  min-height: unset !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-end !important;
+}
+
+#maincontent .slider-container.text .pagebuilder-overlay {
+  padding: 0 !important;
+}
+
+#maincontent .slider-container.text .pagebuilder-poster-content {
+  height: 80vw !important;
+  min-height: unset !important;
+  padding: 10vw !important;
+  display: flex;
+  align-items: flex-start !important;
+}
+
+@media only screen and (min-width:414px) {
+  #maincontent .slider-container.text {
+    padding: 5vw 0 0 !important;
+  }
+
+  #maincontent .slider-container.text .pagebuilder-slide-wrapper {
+    height: 50vw !important;
+    min-height: unset !important;
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+
+  #maincontent .slider-container.text .pagebuilder-overlay {
+    padding: 0 !important;
+    width: 50vw !important;
+  }
+
+  #maincontent .slider-container.text .pagebuilder-poster-content {
+    width: calc(50vw - 10vw) !important;
+    height: calc(50vw - 10vw) !important;
+    min-height: unset !important;
+    padding: 5vw 10vw 5vw 5vw !important;
+    align-items: center !important;
+  }
+
+  #maincontent .slider-container.text h4  {
+    text-align: left !important;
+  }
+
+  #maincontent .slider-container.text p {
+    text-align: left !important;
+  }
+}
+
+/* slider-container images */
+
+/* slider arrows */
+
+#maincontent .slider-container .slick-arrow {
+  background-color: #000000 !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+#maincontent .slider-container .slick-arrow:before {
+  font-size: 24px !important;
+  color: #ffffff !important;
+}
+
+#maincontent .slider-container .slick-next {
+  right: 0 !important;
+  display: block !important;
+}
+
+#maincontent .slider-container .slick-prev {
+  left: 0 !important;
+  display: block !important;
+}
+
+@media only screen and (hover: hover) and (min-width:414px) {
+  #maincontent .slider-container .slick-arrow {
+    background-color: #000000 !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  #maincontent .slider-container .slick-arrow:before {
+    font-size: 24px !important;
+    color: #ffffff !important;
+  }
+
+  #maincontent .slider-container .slick-next {
+    right: 0 !important;
+    display: none !important;
+  }
+
+  #maincontent .slider-container .slick-prev {
+    left: 0 !important;
+    display: none !important;
+  }
+
+  #maincontent .slider-container:hover .slick-next,
+  #maincontent .slider-container:hover .slick-prev {
+    display: block !important;
+  }
+}

@@ -22,7 +22,7 @@
 
 @font-face {
     font-family:'GT America Mono';
-    src:url('GT-America-Mono-Regular.woff2') format('woff2'),url('GT-America-Mono-Regular.woff') format('woff'),url('GT-America-Mono-Regular.otf') format('opentype');
+    src:url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.woff2') format('woff2'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.woff') format('woff'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.otf') format('opentype');
     font-style:normal;font-weight:400;
 }
 
@@ -62,4 +62,80 @@
   /* Color */
   --black: #000000 !important;
   --grey: #C4C4C4 !important;
+
+  /* Uppercase */
+  --upper: uppercase !important;
+}
+
+/* HEADINGS */
+
+#maincontent h1 {
+  font-family: var(--ff-compressed-bold);
+  font-size: var(--fs-heading-01);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+}
+
+#maincontent h2 {
+  font-family: var(--ff-compressed-bold);
+  font-size: var(--fs-heading-02);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+}
+
+#maincontent h3 {
+  font-family: var(--ff-medium);
+  font-size: var(--fs-heading-03);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+}
+
+#maincontent h4.short  {
+  font-family: var(--ff-medium);
+  font-size: var(--fs-heading-short-04);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+}
+
+#maincontent h4.short.link {
+  font-family: var(--ff-medium);
+  font-size: var(--fs-heading-short-04);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-decoration: var(--heading-short-04-link);
+}
+
+#maincontent h4.long  {
+  font-family: var(--ff-medium);
+  font-size: var(--fs-heading-long-04);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+}
+
+/* BODY */
+
+#maincontent .short-01 p {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-body-short-01);
+  line-height: var(--lh-lowercase);
+  letter-spacing: var(--ls);
+}
+
+#maincontent .short-02 p {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-body-short-02);
+  line-height: var(--lh-lowercase);
+  letter-spacing: var(--ls);
+}
+
+#maincontent .long-01 p {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-body-long-01);
+  line-height: var(--lh-lowercase);
+  letter-spacing: var(--ls);
 }
