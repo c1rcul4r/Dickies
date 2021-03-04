@@ -34,7 +34,7 @@
   /* Body Font Size */
   --fs-body-short-01: 24px !important;
   --fs-body-short-02: 20px !important;
-  --fs-body-long-01: calc(15px + (18 - 15) * ((100vw - 360px) / (1440 - 360))) !important;
+  --fs-body-long-01: calc(14px + (20 - 14) * ((100vw - 360px) / (1440 - 360))) !important;
 
   /* Headings Font Size */
   --fs-heading-01: calc(50px + (100 - 50) * ((100vw - 360px) / (1440 - 360))) !important;
