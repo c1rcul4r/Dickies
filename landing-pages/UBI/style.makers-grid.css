@@ -43,7 +43,7 @@
   flex: 1 0 50%;
 }
 
-.popup {
+.makers .popup {
   position: absolute;
   visibility: hidden;
   top: 50%;
@@ -62,7 +62,7 @@
   .makers .grid .heroes {
     max-width: unset !important;
     min-width: unset !important;
-    flex: 1 0 20%;
+    flex: 1 0 16.6667%;
     filter: grayscale(100%);
     position: relative;
   }
@@ -71,13 +71,13 @@
     width: 100% !important;
   }
 
-  .heroes__popup {
+  .makers .popup {
     position: absolute;
     visibility: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    max-width: 500px !important;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -96,7 +96,7 @@
 }
 
 .show {
-  visibility: visible;
+  visibility: visible !important;
 }
 
 .hide {
