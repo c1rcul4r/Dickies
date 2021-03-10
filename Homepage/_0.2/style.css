@@ -426,10 +426,17 @@
 .home.inner-banner {
   height: 125vw !important;
   min-height: unset !important;
-  margin: 0 auto 5vh !important;
+  margin: 0 auto 10px !important;
   padding: 0 0 10vw !important;
   position: relative;
   justify-content: flex-end !important;
+}
+
+.home.inner-banner.buttons {
+  height: auto !important;
+  padding: 5vw 0 !important;
+  margin: 0 !important;
+  display: flex !important;
 }
 
 /* .home.inner-banner::before {
@@ -458,10 +465,17 @@
   .home.inner-banner {
     width: 100vw !important;
     height: 50vw !important;
-    margin: 0 auto 5vh !important;
+    margin: 0 auto 10px !important;
     padding: 0 0 5vw !important;
     position: relative;
     justify-content: flex-end !important;
+  }
+
+  .home.inner-banner.buttons {
+    height: auto !important;
+    padding: 0 0 5vw!important;
+    margin: 0 !important;
+    display: flex !important;
   }
 
   .home.inner-banner.contained {
