@@ -464,6 +464,10 @@
     justify-content: flex-end !important;
   }
 
+  .home.inner-banner.contained {
+    max-width: 1440px !important;
+  }
+
   .home.inner-banner .pagebuilder-column-group:last-child{
     width: 100%;
   }
