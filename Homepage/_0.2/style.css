@@ -457,7 +457,6 @@
 @media only screen and (min-width:768px) {
   .home.inner-banner {
     width: 100vw !important;
-    max-width: 1440px !important;
     height: 50vw !important;
     margin: 0 auto 5vh !important;
     padding: 0 0 5vw !important;
