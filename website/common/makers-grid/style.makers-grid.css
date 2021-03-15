@@ -1,31 +1,42 @@
 /* © CIRCULAR AGENCY */
 
-.makers {
+/* MAKERS-GRID CSS */
+
+.makers-grid {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.makers .grid {
+.makers-grid .grid {
   display: flex;
   flex-wrap: wrap;
   min-width: 100%!important;
 }
 
-.makers .grid .heroes:nth-last-child(-n+6) {
+.makers-grid.items-12 .grid .heroes:nth-last-child(-n+6) {
+  display: none !important;
+}
+
+.makers-grid.items-8 .grid .heroes:nth-last-child(-n+2) {
   display: none !important;
 }
 
 @media only screen and (min-width:768px) {
-  .makers .grid .heroes:nth-last-child(-n+6) {
+  .makers-grid.items-12 .grid .heroes:nth-last-child(-n+6) {
+    display: block !important;
+  }
+
+  .makers-grid.items-12 .grid .heroes:nth-last-child(-n+6) {
     display: block !important;
   }
 }
 
-.makers .grid .heroes h3 {
+.makers-grid .grid .heroes h3 {
   color: white;
   font-style: normal;
-  bottom: 0;
+  margin: 0 !important;
+  bottom: 10px;
   left: 10px;
   position: absolute;
   font-weight: 500;
@@ -35,7 +46,9 @@
   text-align: left;
 }
 
-.makers .grid .heroes {
+.makers-grid.items-12 .grid .heroes,
+.makers-grid.items-8 .grid .heroes {
+  cursor: pointer;
   position: relative;
   filter: grayscale(100%);
   display: inline-block !important;
@@ -43,7 +56,7 @@
   flex: 1 0 50%;
 }
 
-.makers .popup {
+.makers-grid .popup {
   position: absolute;
   visibility: hidden;
   top: 50%;
@@ -60,7 +73,7 @@
 }
 
 @media (min-width: 768px) {
-  .makers .grid .heroes {
+  .makers-grid.items-12 .grid .heroes {
     max-width: unset !important;
     min-width: unset !important;
     flex: 1 0 16.6667%;
@@ -68,11 +81,19 @@
     position: relative;
   }
 
-  .makers .grid .heroes img {
+  .makers-grid.items-8 .grid .heroes {
+    max-width: unset !important;
+    min-width: unset !important;
+    flex: 1 0 25%;
+    filter: grayscale(100%);
+    position: relative;
+  }
+
+  .makers-grid .grid .heroes img {
     width: 100% !important;
   }
 
-  .makers .popup {
+  .makers-grid .popup {
     position: absolute;
     visibility: hidden;
     top: 50%;
@@ -88,16 +109,28 @@
     z-index: 1;
   }
 
-  .makers .popup img {
+  .makers-grid .popup img {
     height: 100% !important;
   }
 }
 
-.makers .grid .heroes:hover {
+.makers-grid .grid .heroes:hover {
   filter: grayscale(0%);
 }
 
-.makers .grid-image:before {
+.makers-grid .grid .heroes:hover img {
+  -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.makers-grid .grid .heroes img {
+  -webkit-transition: transform 2.5s linear;
+-ms-transition: transform 2.5s linear;
+transition: transform 2.5s linear;
+}
+
+.makers-grid .grid-image:before {
   background: none;
 }
 
@@ -122,20 +155,23 @@
   display: block !important;
 }
 
-.heroes__remove {
-  background: transparent !important;
+.heroes.remove-btn {
+  background-color: #000000 !important;
+  width: 40px !important;
+  height: 40px !important;
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 0;
+  top: 0;
   border: none !important;
-  padding: 10px !important;
+  padding: 0 !important;
 }
 
-.heroes__remove::before {
+.heroes.remove-btn::before {
   -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 20px !important;
+    color: #ffffff !important;
+    line-height: 20px;
     color: #ffffff;
     content: '\e616';
     font-family: 'luma-icons';
@@ -148,31 +184,6 @@
 }
 
 @media (min-width: 768px) {
-  .heroes__remove {
-    background: transparent !important;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    border: none !important;
-    padding: 0 !important;
-  }
-
-  .heroes__remove::before {
-    -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      font-size: 14px;
-      line-height: 14px;
-      color: #ffffff;
-      content: '\e616';
-      font-family: 'luma-icons';
-      vertical-align: middle;
-      display: inline-block;
-      font-weight: 400;
-      overflow: hidden;
-      speak: none;
-      text-align: center;
-  }
-
   .desktop {
     display: block !important;
   }

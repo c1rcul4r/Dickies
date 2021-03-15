@@ -1,8 +1,10 @@
 /* © CIRCULAR AGENCY */
 
+/* TYPOGRAPHY CSS */
+
 /* font-face */
 
-@font-face {
+/* @font-face {
     font-family:'GT America Regular';
     src:url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.woff2') format('woff2'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.woff') format('woff'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.otf') format('opentype');
     font-style:normal;font-weight:400;
@@ -24,7 +26,7 @@
     font-family:'GT America Mono';
     src:url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.woff2') format('woff2'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.woff') format('woff'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.otf') format('opentype');
     font-style:normal;font-weight:400;
-}
+} */
 
 :root {
   /* Supporting Style Font Size */
@@ -68,6 +70,10 @@
   --fw-medium: 500 !important;
   --fw-bold: 700 !important;
 
+  /* Margin */
+  --m-heading: 0 0 30px !important;
+  --m-body: 0 0 15px !important;
+
   /* Color */
   --black: #000000 !important;
   --grey: #C4C4C4 !important;
@@ -80,69 +86,78 @@
 
 #maincontent h1 {
   font-family: var(--ff-compressed-bold);
+  font-weight: var(--fw-bold);
   font-size: var(--fs-heading-01);
   line-height: var(--lh-uppercase);
   letter-spacing: var(--ls);
   text-transform: var(--upper);
+  margin: var(--m-heading);
 }
 
 #maincontent h2 {
   font-family: var(--ff-compressed-bold);
+  font-weight: var(--fw-bold);
   font-size: var(--fs-heading-02);
   line-height: var(--lh-uppercase);
   letter-spacing: var(--ls);
   text-transform: var(--upper);
+  margin: var(--m-heading);
 }
 
 #maincontent h3 {
   font-family: var(--ff-medium);
+  font-weight: var(--fw-bold);
   font-size: var(--fs-heading-03);
   line-height: var(--lh-uppercase);
   letter-spacing: var(--ls);
   text-transform: var(--upper);
+  margin: var(--m-heading);
 }
 
 #maincontent h4.short  {
   font-family: var(--ff-medium);
+  font-weight: var(--fw-bold);
   font-size: var(--fs-heading-short-04);
   line-height: var(--lh-uppercase);
   letter-spacing: var(--ls);
   text-transform: var(--upper);
+  margin: var(--m-heading);
 }
 
 #maincontent [data-content-type=button-item].short.link .pagebuilder-button-link {
   font-family: var(--ff-medium);
   font-size: var(--fs-heading-05);
+  font-weight: var(--fw-bold);
   line-height: var(--lh-h4-short-link);
   letter-spacing: var(--ls);
   text-decoration: var(--heading-short-04-link);
   font-weight: var(--fw-medium);
-  margin: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin: var(--m-heading);
 }
 
 #maincontent h4.long  {
   font-family: var(--ff-medium);
+  font-weight: var(--fw-bold);
   font-size: var(--fs-heading-long-04);
   line-height: var(--lh-uppercase);
   letter-spacing: var(--ls);
   text-transform: var(--upper);
+  margin: var(--m-heading);
 }
 
 #maincontent h5  {
   font-family: var(--ff-medium);
+  font-weight: var(--fw-bold);
   font-size: var(--fs-heading-05);
   line-height: var(--lh-uppercase);
   letter-spacing: var(--ls);
   text-transform: var(--upper);
+  margin: var(--m-heading);
 }
 
 @media only screen and (hover: hover) and (min-width:414px) {
   #maincontent [data-content-type=button-item].short.link .pagebuilder-button-link {
-    margin: 0 !important;
-    margin-top: 2.3rem !important;
-    margin-bottom: 2.3rem !important;
+    margin: var(--m-heading);
   }
 }
 
@@ -176,7 +191,49 @@
   letter-spacing: var(--ls);
 }
 
+div[data-content-type=text] p:last-child {
+  margin: 0 !important;
+}
+
 body {
   font-size: var(--fs-body);
   line-height: var(--lh-lowercase);
+}
+
+/* heading + link */
+
+#maincontent .heading-link {
+  flex-direction: column !important;
+}
+
+#maincontent .heading-link h4 {
+  margin: 0 0 10px !important;
+}
+
+#maincontent .heading-link .pagebuilder-button-link {
+  margin: 0 !important;
+}
+
+#maincontent .heading-link .pagebuilder-button-link {
+  padding: 0 !important
+}
+
+#maincontent .heading-link [data-content-type="buttons"] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media only screen and (min-width:414px) {
+  #maincontent .heading-link {
+    flex-direction: row !important;
+  }
+
+  #maincontent .heading-link .pagebuilder-button-link {
+    padding: 0 0 0 20px !important
+  }
+
+  #maincontent .heading-link [data-content-type="buttons"] {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 }
