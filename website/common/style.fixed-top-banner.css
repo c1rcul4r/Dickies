@@ -1,0 +1,134 @@
+/* © CIRCULAR AGENCY */
+
+/* FIXED TOP-BANNER */
+
+#maincontent h1 {
+  line-height: 0.8 !important;
+}
+
+#maincontent .top-banner.fixed.heading {
+  height: calc(140vw + 100px) !important;
+  margin: -100px 0 0 0 !important;
+  padding: 0 !important
+}
+
+#maincontent .top-banner.fixed.heading [data-content-type="text"] {
+  position: sticky !important;
+  top: 82px !important;
+  margin: 0 !important;
+}
+
+#maincontent .top-banner.fixed.video,
+#maincontent .top-banner.fixed.image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 125vw;
+  margin: -125vw 0 0 0 !important;
+  overflow: hidden;
+  background-size: 100vw !important;
+}
+
+#maincontent .top-banner.fixed.video iframe.desktop {
+  display: none;
+  width: 100vw !important;
+  height: 50vw !important;
+  min-height: 100vh !important;
+  min-width: 200vh !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+
+#maincontent .top-banner.fixed.video iframe.mobile {
+  display: block;
+  width: 100vw;
+  height: 125vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+
+@media only screen and (min-width:415px) {
+  #maincontent .top-banner.fixed.heading [data-content-type="text"] {
+    position: sticky !important;
+    top: 98px !important;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (min-width:769px) {
+  #maincontent .top-banner.fixed.heading {
+    height: calc(60vw + 200px) !important;
+    margin: -200px 0 0 0 !important;
+    padding: 0 !important
+  }
+
+  #maincontent .top-banner.fixed.heading [data-content-type="text"] {
+    position: sticky !important;
+    top: 81px !important;
+    margin: 0 !important;
+  }
+
+  #maincontent .top-banner.fixed.video,
+  #maincontent .top-banner.fixed.image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vw;
+    margin: -50vw 0 0 0 !important;
+    overflow: hidden;
+  }
+
+  #maincontent .top-banner.fixed.video iframe.desktop {
+    display: block;
+  }
+
+  #maincontent .top-banner.fixed.video iframe.mobile {
+    display: none;
+  }
+}
+
+@media only screen and (hover: none) and (min-width:769px) {
+  #maincontent .top-banner.fixed.heading {
+    height: calc(60vw + 200px) !important;
+    margin: -200px 0 0 0 !important;
+    padding: 0 !important
+  }
+
+  #maincontent .top-banner.fixed.heading [data-content-type="text"] {
+    position: sticky !important;
+    top: 98px !important;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (hover: hover) and (min-width:769px) {
+  #maincontent .top-banner.fixed.heading {
+    height: calc(57vw + 200px) !important;
+    margin: -200px 0 0 0 !important;
+    padding: 0 !important
+  }
+
+   #maincontent .top-banner.fixed.heading [data-content-type="text"] {
+    position: sticky !important;
+    top: 98px !important;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  #maincontent .top-banner.fixed.heading [data-content-type="text"] {
+    position: sticky !important;
+    top: 168px !important;
+    margin: 0 !important;
+  }
+}
