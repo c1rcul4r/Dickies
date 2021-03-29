@@ -1,0 +1,18 @@
+/* © CIRCULAR AGENCY */
+
+/* HP 0.3 */
+
+.makers-grid.four-col .grid .heroes:nth-child(-n+6) {
+  display: none !important;
+}
+
+.makers-grid.four-col .grid .heroes:nth-child(4n+1),
+.makers-grid.four-col .grid .heroes:nth-child(4n+2) {
+  display: block !important;
+}
+
+@media only screen and (min-width:769px) {
+  .makers-grid.four-col .grid .heroes:nth-child(-n+12) {
+    display: block !important;
+  }
+}
