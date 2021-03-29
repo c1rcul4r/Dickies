@@ -1,0 +1,38 @@
+/* © CIRCULAR AGENCY */
+
+/* CATEGORY SLIDER */
+
+#maincontent .category-slider  {
+  padding: 30px 0 !important;
+}
+
+#maincontent .category-slider .slick-slide {
+  padding: 0 10px !important;
+}
+
+#maincontent .category-slider [data-content-type="button-item"] {
+  width: 100% !important;
+}
+
+#maincontent .category-slider [data-content-type="button-item"] .pagebuilder-button-link {
+  padding: 25px !important;
+  background-color: white !important;
+  width: 100% !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+  -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+#maincontent .category-slider .slick-current [data-content-type="button-item"] .pagebuilder-button-link {
+  background-color: black !important;
+  color: white !important;
+}
+
+@media only screen and (min-width:769px) {
+  #maincontent .category-slider  {
+    padding: 35px 0 !important;
+  }
+}
