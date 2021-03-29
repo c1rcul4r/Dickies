@@ -1,0 +1,250 @@
+/* © CIRCULAR AGENCY */
+
+/* TYPOGRAPHY CSS */
+
+/* font-face */
+
+/* @font-face {
+    font-family:'GT America Regular';
+    src:url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.woff2') format('woff2'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.woff') format('woff'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Regular-web/GT-America-Standard-Regular.otf') format('opentype');
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:'GT America Medium';
+    src:url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Medium-web/GT-America-Standard-Medium.woff2') format('woff2'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Medium-web/GT-America-Standard-Medium.woff') format('woff'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Standard-Medium-web/GT-America-Standard-Medium.otf') format('opentype');
+    font-style:normal;font-weight:500;
+}
+
+@font-face {
+    font-family:'GT America Compressed Bold';
+    src:url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Compressed-Bold-web/GT-America-Compressed-Bold.woff2') format('woff2'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Compressed-Bold-web/GT-America-Compressed-Bold.woff') format('woff'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Compressed-Bold-web/GT-America-Compressed-Bold.otf') format('opentype');
+    font-style:normal;font-weight:700;
+}
+
+@font-face {
+    font-family:'GT America Mono';
+    src:url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.woff2') format('woff2'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.woff') format('woff'),url('https://raw.githack.com/c1rcul4r/Dickies/master/fonts/GT-America-Mono-Regular-web/GT-America-Mono-Regular.otf') format('opentype');
+    font-style:normal;font-weight:400;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+
+:root {
+  /* Supporting Style Font Size */
+  --fs-ticker: calc(14px + (18 - 14) * ((100vw - 360px) / (1440 - 360))) !important;
+  --fs-journal-category: 12px !important;
+
+  /* Body Font Size */
+  --fs-body: 13px !important;
+  --fs-body-short-01: 24px !important;
+  --fs-body-short-02: 20px !important;
+  --fs-body-long-01: calc(14px + (20 - 14) * ((100vw - 360px) / (1440 - 360))) !important;
+  --fs-body-long-02: calc(14px + (16 - 14) * ((100vw - 360px) / (1440 - 360))) !important;
+
+  /* Headings Font Size */
+  --fs-heading-01: calc(50px + (100 - 50) * ((100vw - 360px) / (1440 - 360))) !important;
+  --fs-heading-02: calc(40px + (60 - 40) * ((100vw - 360px) / (1440 - 360))) !important;
+  --fs-heading-03: calc(30px + (60 - 30) * ((100vw - 360px) / (1440 - 360))) !important;
+  --fs-heading-short-04: calc(25px + (32 - 25) * ((100vw - 360px) / (1440 - 360))) !important;
+  --fs-heading-long-04: calc(20px + (32 - 20) * ((100vw - 360px) / (1440 - 360))) !important;
+  --fs-heading-05: calc(20px + (20 - 20) * ((100vw - 360px) / (1440 - 360))) !important;
+
+  /* Headings Variant */
+  --heading-short-04-link: underline;
+
+  /* Line Height */
+  --lh-uppercase: 1.25 !important;
+  --lh-lowercase: 1.4 !important;
+  --lh-h4-short-link: calc(35px + (44.8 - 35) * ((100vw - 360px) / (1440 - 360))) !important;
+
+  /* Letter Spacing */
+  --ls: 0.4px !important;
+
+  /* Font Family */
+  --ff-regular: 'GT America Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  --ff-medium: 'GT America Medium', 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', Helvetica, Arial, sans-serif !important;
+  --ff-compressed-bold: 'GT America Compressed Bold', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', 'Helvetica Neue', 'Helvetica Bold', 'Arial Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  --ff-mono: 'DM Mono', 'GT America Mono', 'Courier New', monospace !important;
+
+  /* Font Weight */
+  --fw-regular: 400 !important;
+  --fw-medium: 500 !important;
+  --fw-bold: 700 !important;
+
+  /* Margin */
+  --m-heading: 0 0 30px !important;
+  --m-body: 0 0 15px !important;
+
+  /* Color */
+  --black: #000000 !important;
+  --grey: #C4C4C4 !important;
+  --white: #FFFFFF !important;
+
+  /* Uppercase */
+  --upper: uppercase !important;
+}
+
+/* HEADINGS */
+
+#maincontent h1 {
+  font-family: var(--ff-compressed-bold);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-01);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+  margin: var(--m-heading);
+}
+
+#maincontent h2 {
+  font-family: var(--ff-compressed-bold);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-02);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+  margin: var(--m-heading);
+}
+
+#maincontent h3 {
+  font-family: var(--ff-medium);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-03);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+  margin: var(--m-heading);
+}
+
+#maincontent h4.short  {
+  font-family: var(--ff-medium);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-short-04);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+  margin: var(--m-heading);
+}
+
+#maincontent [data-content-type=button-item].short.link .pagebuilder-button-link {
+  font-family: var(--ff-medium);
+  font-size: var(--fs-heading-05);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-h4-short-link);
+  letter-spacing: var(--ls);
+  text-decoration: var(--heading-short-04-link);
+  font-weight: var(--fw-medium);
+  margin: var(--m-heading);
+}
+
+#maincontent h4.long  {
+  font-family: var(--ff-medium);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-long-04);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+  margin: var(--m-heading);
+}
+
+#maincontent h5  {
+  font-family: var(--ff-medium);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-heading-05);
+  line-height: var(--lh-uppercase);
+  letter-spacing: var(--ls);
+  text-transform: var(--upper);
+  margin: var(--m-heading);
+}
+
+@media only screen and (hover: hover) and (min-width:769px) {
+  #maincontent [data-content-type=button-item].short.link .pagebuilder-button-link {
+    margin: var(--m-heading);
+  }
+}
+
+/* BODY */
+
+#maincontent .short-01 p {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-body-short-01);
+  line-height: var(--lh-lowercase);
+  letter-spacing: var(--ls);
+}
+
+#maincontent .short-02 p {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-body-short-02);
+  line-height: var(--lh-lowercase);
+  letter-spacing: var(--ls);
+}
+
+#maincontent .long-01 p {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-body-long-01);
+  line-height: var(--lh-lowercase);
+  letter-spacing: var(--ls);
+}
+
+#maincontent .long-02 p {
+  font-family: var(--ff-regular);
+  font-size: var(--fs-body-long-02);
+  line-height: var(--lh-lowercase);
+  letter-spacing: var(--ls);
+}
+
+div[data-content-type=text] p:last-child {
+  margin: 0 !important;
+}
+
+body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-lowercase);
+}
+
+/* heading + link */
+
+#maincontent .heading-link {
+  flex-direction: column !important;
+  width: 80vw !important;
+  margin: 0 auto !important;
+  max-width: 1440px !important;
+  padding: 20vw 0 12.5vw !important;
+}
+
+#maincontent .heading-link h4 {
+  margin: 0 0 10px !important;
+}
+
+#maincontent .heading-link .pagebuilder-button-link {
+  margin: 0 !important;
+}
+
+#maincontent .heading-link .pagebuilder-button-link {
+  padding: 0 !important
+}
+
+#maincontent .heading-link [data-content-type="buttons"] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media only screen and (min-width:769px) {
+  #maincontent .heading-link {
+    flex-direction: row !important;
+    width: 90vw !important;
+    margin: 0 auto !important;
+    max-width: 1440px !important;
+    padding: 7.5vw 2vw 2vw !important;
+  }
+
+  #maincontent .heading-link .pagebuilder-button-link {
+    padding: 0 0 0 20px !important
+  }
+
+  #maincontent .heading-link [data-content-type="buttons"] {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
