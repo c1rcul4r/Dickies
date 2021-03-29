@@ -1,0 +1,44 @@
+/* © CIRCULAR AGENCY */
+
+/* DESERT EXPEDITION */
+
+#maincontent .text-container h4.short {
+  color: white !important;
+}
+
+#maincontent .looks-grid {
+      padding: 20vw 10vw !important;
+      width: 100vw !important;
+}
+
+#maincontent .abs-product-link>a:hover, #maincontent .product-item-name>a:hover, #maincontent .product.name a>a:hover, #maincontent .block.widget .product-items .product-item, #maincontent .product-item-name>a, #maincontent .product.name a>a {
+    color: white !important;
+}
+
+#maincontent .slider-container.text .last .pagebuilder-slide-wrapper {
+  justify-content: flex-start !important;
+}
+
+#maincontent .slider-container.text h4 {
+  color: var(--black);
+}
+
+#maincontent .looks-grid .pagebuilder-column img {
+  width: 102% !important;
+  max-width: 102% !important;
+  height: 102% !important;
+  max-height: 102% !important;
+  left: -1% !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  #maincontent .text-container {
+    width: 100% !important;
+    padding: 7.5vw 25% !important;
+  }
+
+  #maincontent .looks-grid {
+        padding: 7.5vw 7vw !important;
+        width: 100vw !important;
+  }
+}
